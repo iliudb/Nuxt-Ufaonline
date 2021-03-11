@@ -21,10 +21,10 @@
 
       <!-- Mobile -->
       <div class="hidden-md-and-up">
-        <div style="position: fixed; right: 2.5%; top: 75%; z-index: 1; height:100px; width:100px;">
+        <div style="position: fixed; right: 2.5%; top: 70%; z-index: 1; height:100px; width:100px;">
           <img style="width:100%" src="../assets/Webp/Ufagame/linebunnyfix.webp" />
         </div>
-        <div class="d-flex justify-center">
+        <div class="d-flex justify-center flex-wrap">
           <v-slide-group center-active>
             <v-slide-item
               v-for="i in ugimg"

@@ -3,13 +3,26 @@
     <div id="redline"></div>
     <!-- Desktop -->
     <div class="hidden-sm-and-down">
-      <div class="d-flex flex-wrap" style="width: 100%; color: white; padding: 2.5%">
-        <div class="d-flex justify-center flex-wrap" style="width: 40%;">
-          <div style="width:100%;"><img style="width:100%" src="../assets/Webp/Newufabet/ufalogo.webp" /></div>
-          <div style="width:100%"><img style="width:100%" src="../assets/Webp/Newufabet/mb2.webp" /></div>
+      <div
+        class="d-flex flex-wrap"
+        style="width: 100%; color: white; padding: 0px 2.5% 0px 2.5%"
+      >
+        <div class="d-flex justify-center flex-wrap" style="width: 40%">
+          <div style="width: 100%">
+            <img
+              style="width: 100%"
+              src="../assets/Webp/Newufabet/ufalogo.webp"
+            />
+          </div>
+          <div class="d-flex justify-center" style="width: 100%">
+            <img
+              style="width: 100%; max-width: 400px; max-height: 450px"
+              src="../assets/Webp/Newufabet/mb2.webp"
+            />
+          </div>
         </div>
-        <div style="width:10%"></div>
-        <div style="width: 50%">
+        <div style="width: 5%"></div>
+        <div style="width: 55%">
           <div id="Newufahaed">
             ฝาก-ถอน ออโต้ โปรแรงสุดในไทย อัพเกรดใหม่ New UFABET ระบบไวกว่าเดิม
           </div>
@@ -60,19 +73,14 @@
               </div>
             </div>
           </div>
-          <div class="d-flex justify-center">
-            <v-slide-group center-active>
-              <v-slide-item
-                v-for="i in gamelog"
-                :key="i.id"
-                v-slot="{ toggle }"
-                style="width: 100px; margin: 0 0.5%"
-              >
-                <div color="transparent" style="width: 50px" @click="toggle">
-                  <img style="width: 100%" :src="i.src" />
-                </div>
-              </v-slide-item>
-            </v-slide-group>
+          <div class="d-flex justify-center flex-wrap">
+            <div
+              v-for="i in gamelog"
+              :key="i.id"
+              style="width: 100px; margin: 0 0.5%"
+            >
+              <img style="width: 100%" :src="i.src" />
+            </div>
           </div>
           <div
             style="width: 100%; margin-top: 20px"
@@ -134,11 +142,11 @@ export default {
 <style lang="scss" scoped>
 #gamelogo {
   width: 100%;
-  margin: 40px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   div {
     margin: 0px 10px;
     img {
-      width: 100px;
+      width: 90px;
     }
   }
 }

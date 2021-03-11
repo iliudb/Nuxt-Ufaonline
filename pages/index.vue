@@ -6,7 +6,7 @@
     <Ufapromotion />
     <Newufabet />
     <Aboutus />
-    <div
+    <!-- <div
       id="seoa"
       class="d-flex"
       style="background: transparent; height: 100px; width: 100%"
@@ -29,13 +29,12 @@
           style="height: 80%; width: 80%"
           >enter</v-btn
         >
-        <!-- href="#seo" -->
       </div>
-    </div>
+    </div> -->
 
-    <div v-if="this.$store.getters.gseocon == true">
+    <!-- <div v-if="this.$store.getters.gseocon == true">
       <Seo />
-    </div>
+    </div> -->
   </div>
 </template>
 

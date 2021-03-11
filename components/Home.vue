@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="hidden-sm-and-down" style="height: 80px"></div>
+    <!-- <div class="hidden-sm-and-down" style="height: 80px"></div>
     <div class="d-flex justify-center">
       <img
         class="d-flex justify-center align-end"
@@ -34,7 +34,7 @@
           </div>
         </v-btn>
       </v-card>
-    </div>
+    </div> -->
   </div>
 </template>
 

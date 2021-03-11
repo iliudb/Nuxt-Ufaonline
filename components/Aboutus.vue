@@ -1,8 +1,9 @@
 <template>
   <div class="justify-center">
     <!-- Desktop -->
-    <div id="redline"></div>
+    
     <div class="hidden-sm-and-down">
+      <div id="redline"></div>
       <div class="d-flex" style="color: white; width: 100%; padding: 2.5% 5%">
         <div style="width: 40%">
           <div id="abshead">UFA-ONLINE สล็อตคาสิโนออนไลน์</div>
@@ -65,7 +66,9 @@
     </div>
 
     <!-- Mobile -->
+    
     <div class="hidden-md-and-up">
+      <div id="mbredline"></div>
       <div style="color: white; width: 100%; padding: 0 8%">
         <div style="width: 100%; margin: 20px 0px">
           <div id="abshead">UFA-ONLINE สล็อตคาสิโนออนไลน์</div>
@@ -151,10 +154,16 @@ export default {};
   font-size: 20px;
 }
 #redline {
+  margin-top:0px;
   width: 100%;
   height: 3px;
   background: red;
-  margin: 20px 0px;
+}
+#mbredline {
+  margin-top:0px;
+  width: 100%;
+  height: 3px;
+  background: red;
 }
 #reddat {
   background: red;
