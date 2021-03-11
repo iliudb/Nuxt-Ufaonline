@@ -10,12 +10,12 @@
               src="../assets/Webp/Appbar/logoufa.webp"
             />
           </div>
-          <div class="d-flex flex-wrap justify-center" style="width: 30%">
-            <div style="width: 33%" v-for="i in appbar" :key="i.id">
+          <div class="d-flex flex-wrap justify-center" style="width: 40%">
+            <div style="width: 25%" v-for="i in appbar" :key="i.id">
               <img style="width: 100%" :src="i.src" />
             </div>
           </div>
-          <div style="width: 40%" class="d-flex justify-end">
+          <div style="width: 30%" class="d-flex justify-end">
             <a
               style="color: white"
               href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
@@ -174,6 +174,7 @@ export default {
         { id: 1, src: require("../assets/Webp/Appbar/promotion.webp") },
         { id: 2, src: require("../assets/Webp/Appbar/activity.webp") },
         { id: 3, src: require("../assets/Webp/Appbar/introduce.webp") },
+        { id: 4, src: require("../assets/Webp/Appbar/article.webp")}
       ],
     };
   },
