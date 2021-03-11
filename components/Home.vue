@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="hidden-sm-and-down" style="height: 80px"></div>
-    <div class="d-flex justify-center">
-      <img
+    <div class="d-flex justify-center bgimg" style="background:green;width:500px;height:500px;">
+      <!-- <img
         class="d-flex justify-center align-end"
         style="width: 100%"
         src="../assets/Webp/Asd/bg.webp"
-      />
-      <v-card class="d-flex justify-center" outlined color="transparent">
+      /> -->
+      <!-- <v-card class="d-flex justify-center" outlined color="transparent">
         <v-btn
           height="auto"
           max-width="20%"
@@ -33,7 +33,7 @@
             </div>
           </div>
         </v-btn>
-      </v-card>
+      </v-card> -->
     </div>
   </div>
 </template>
@@ -47,6 +47,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.bgimg{
+  background-image: url("../assets/Webp/Asd/bg.webp");
+  background-size: auto;
+  background-color: #cccccc;
+
+}
 .register {
   max-width: 20%;
   border-radius: 80px;
