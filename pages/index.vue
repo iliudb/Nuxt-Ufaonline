@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <AppBar />
     <Home />
     <Ufagame />
@@ -71,3 +71,12 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+@font-face {
+  font-family: myKanit;
+  src: url("../assets/Fonts/Kanit Medium.ttf");
+}
+#app {
+  font-family: myKanit;
+}
+</style>
