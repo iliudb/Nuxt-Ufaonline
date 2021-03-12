@@ -1,12 +1,33 @@
 <template>
-  <div>
-    <div class="hidden-sm-and-down" style="height: 80px"></div>
-    <div class="d-flex justify-center bgimg" style="background:green;width:500px;height:500px;">
-      <!-- <img
-        class="d-flex justify-center align-end"
-        style="width: 100%"
-        src="../assets/Webp/Asd/bg.webp"
-      /> -->
+  <div style="background:green;">
+    <div class="hidden-sm-and-down" style="height: 100px"></div>
+    <div class="d-flex justify-center">
+      <v-row class="justify-center" style="width:100%;">
+        <div class="d-flex justify-center align-end">
+          <img
+            class="d-flex justify-center"
+            style="width: 100%"
+            src="../assets/Webp/Asd/bg.webp"
+          />
+          <div style="background:red;position: absolute;width:30%;" >
+            <v-btn
+              style="border-radius: 80px;"
+              height="auto"
+              width="70%"
+              color="success"
+              class="backgroundBT"
+            >
+              <div style="max-width:30%;z-index:1;" class="align-center">
+                <img
+                  src="../assets/Webp/Asd/101.webp"
+                  style="max-width:100%;"
+                />
+              </div>
+            </v-btn>
+          </div>
+        </div>
+      </v-row>
+
       <!-- <v-card class="d-flex justify-center" outlined color="transparent">
         <v-btn
           height="auto"
@@ -43,15 +64,20 @@ export default {
   data: () => {
     return {};
   },
-  name: "Home",
+  name: "Home"
 };
 </script>
 <style lang="scss" scoped>
-.bgimg{
+img {
+  max-width: 100%;
+  height: auto;
+}
+.bgimg {
+  width: 100%;
+  height: 100%;
   background-image: url("../assets/Webp/Asd/bg.webp");
-  background-size: auto;
-  background-color: #cccccc;
-
+  background-size: cover;
+  background-position: center;
 }
 .register {
   max-width: 20%;
@@ -61,22 +87,22 @@ export default {
 }
 @media (min-width: 380px) {
   .register {
-    max-width: 25%;
+    max-width: 15%;
   }
 }
 @media (min-width: 765px) {
   .register {
-    max-width: 60%;
+    max-width: 10%;
   }
 }
 @media (min-width: 1023px) {
   .register {
-    max-width: 70%;
+    max-width: 10%;
   }
 }
 @media (min-width: 1500px) {
   .register {
-    max-width: 100%;
+    max-width: 10%;
   }
 }
 .effect1 {
@@ -130,7 +156,7 @@ export default {
   background-size: 400%;
   opacity: 1;
   transition: 0.5%;
-  z-index: -1;
+  // z-index: -1;
   animation: animate 20s linear infinite;
 }
 .backgroundBT::after {
@@ -158,7 +184,7 @@ export default {
   opacity: 1;
   filter: blur(10px);
   transition: 0.5%;
-  z-index: -1;
+  // z-index: -1;
   animation: animate 20s linear infinite;
 }
 @keyframes animate {
@@ -172,26 +198,26 @@ export default {
     background-position: 0 0;
   }
 }
-// .backgroundBT span {
-//   position: absolute;
-//   max-width: 100%;
-//   display: block;
-//   top: 1px;
-//   left: 1px;
-//   bottom: 1px;
-//   right: 1px;
-//   text-align: center;
-//   background: #0c0c0c;
-//   background-image: url("../assets/test/101.webp");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: auto;
-//   color: rgba(225, 255, 255, 0.2);
-//   transition: 0.5s;
-//   z-index: -1;
-//   border-radius: 80px;
-// }
+.backgroundBT span {
+  position: absolute;
+  max-width: 100%;
+  display: block;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  right: 1px;
+  text-align: center;
+  background: #0c0c0c;
+  background-image: url("../assets/Webp/Asd/101.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  color: rgba(225, 255, 255, 0.2);
+  transition: 0.5s;
+  // z-index: -1;
+  border-radius: 80px;
+}
 // .BT:hover {
-//   background-image: url("../assets/test/102.webp");
+//   background-image: url("../assets/Webp/Asd/101.webp");
 // }
 </style>

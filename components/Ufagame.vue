@@ -63,6 +63,6 @@ export default {
   width: 100%;
   height: 5px;
   background: red;
-  margin: 20px 0px;
+  margin: 0px 0 10px 0 ;
 }
 </style>
