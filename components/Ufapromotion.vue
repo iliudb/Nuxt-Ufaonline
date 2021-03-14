@@ -2,8 +2,10 @@
   <div class="justify-center">
     <!-- Desktop -->
     <div class="hidden-sm-and-down">
-      <div style="color:white; text-align:center; font-size:40px">โปรโมชั่น</div>
-      <div class="d-flex justify-center" style="padding:0px 0px 2.5% 0px">
+      <div style="color: white; text-align: center; font-size: 40px">
+        โปรโมชั่น
+      </div>
+      <div class="d-flex justify-center" style="padding: 0px 0px 2.5% 0px">
         <img src="../assets/Webp/Ufapromotion/promotion.webp" />
       </div>
       <div id="proloopimg" class="d-flex justify-center flex-wrap">
@@ -12,12 +14,15 @@
         </div>
       </div>
       <div class="d-flex">
-        <div style="width: 60%">
-          <div class="d-flex justify-center">
-            <img src="../assets/Webp/Ufapromotion/ufalogo.webp" />
+        <div class="d-flex justify-center flex-wrap" style="width: 60%">
+          <div style="width: 100%" class="d-flex justify-center">
+            <img
+              style="width: 100%; max-width: 800px; max-height: 150px"
+              src="../assets/Webp/Ufapromotion/ufalogo.webp"
+            />
           </div>
           <div id="ufaprohd">เว็บกีฬาออนไลน์ คาสิโนออนไลน์</div>
-          <div>
+          <div style="width: 100%">
             <div id="redline"></div>
           </div>
           <div id="ufaprotx">
@@ -38,7 +43,7 @@
             และสามารถดำเนินการ และบริหารงานได้อย่างมีคุณภาพ และประสิทธิภาพสูงสุด
           </div>
         </div>
-        <div class="d-flex align-center" style="width: 40%">
+        <div class="d-flex justify-center align-center" style="width: 40%">
           <div class="d-flex justify-center align-center">
             <img
               style="width: 100%"
@@ -51,7 +56,7 @@
 
     <!-- Mobile -->
     <div class="hidden-md-and-up">
-      <div style="color:white; width:100%; text-align:center">โปรโมชั่น</div>
+      <div style="color: white; width: 100%; text-align: center">โปรโมชั่น</div>
       <div>
         <img
           style="width: 100%"
@@ -61,13 +66,13 @@
 
       <v-carousel
         cycle
-        style="max-height:400px"
+        style="max-height: 400px"
         hide-delimiter-background
         show-arrows-on-hover
       >
         <v-carousel-item v-for="i in proimg" :key="i.id">
           <div class="d-flex justify-center">
-            <img style="width: 100%; max-width:400px" :src="i.src" />
+            <img style="width: 100%; max-width: 400px" :src="i.src" />
           </div>
         </v-carousel-item>
       </v-carousel>
@@ -76,7 +81,7 @@
         <div style="width: 100%">
           <div class="d-flex justify-center">
             <img
-              style="width: 100%; max-width:600px;"
+              style="width: 100%; max-width: 600px"
               src="../assets/Webp/Ufapromotion/ufalogo.webp"
             />
           </div>
@@ -150,6 +155,7 @@ export default {
   color: red;
   font-size: 35px;
   text-align: center;
+  width: 100%;
 }
 #proloopimg {
   width: 100%;
@@ -158,6 +164,7 @@ export default {
     img {
       width: 90%;
       max-height: 400px;
+      max-width: 400px;
     }
   }
 }

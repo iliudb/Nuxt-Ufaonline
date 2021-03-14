@@ -101,9 +101,13 @@
               src="../assets/Webp/Appbar/logoufa.webp"
             />
           </div>
-          <div class="d-flex flex-wrap justify-center" style="width: 35%">
-            <div style="width: 25%" v-for="i in appbar" :key="i.id">
-              <img style="width: 100%" :src="i.src" />
+          <div class="d-flex flex-wrap" style="width: 40%">
+            <div class="d-flex flex-wrap justify-center" style="width: 25%" v-for="i in appbar" :key="i.id">
+              <div style="width:100%">
+                <a @click="article(i.path)"
+                  ><img style="width: 100%" :src="i.src"
+                /></a>
+              </div>
             </div>
           </div>
           <div style="width: 30%" class="d-flex justify-end">
@@ -295,11 +299,21 @@ export default {
         { id: 1, src: require("../assets/Webp/Appbar/promotion.webp") },
         { id: 2, src: require("../assets/Webp/Appbar/activity.webp") },
         { id: 3, src: require("../assets/Webp/Appbar/introduce.webp") },
-        { id: 4, src: require("../assets/Webp/Appbar/article.webp") }
-      ]
+        {
+          id: 4,
+          src: require("../assets/Webp/Appbar/article.webp"),
+          path: "seo",
+        },
+      ],
     };
   },
-  name: "AppBar"
+  methods: {
+    article(path) {
+      if(path=='seo'){
+        this.$router.push({path:'seo'})
+      }
+    },
+  },
 };
 </script>
 
