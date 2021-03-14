@@ -2,18 +2,52 @@
   <div style="background:green;">
     <div class="hidden-sm-and-down" style="height: 100px"></div>
     <div class="d-flex justify-center">
-      <v-row class="justify-center" style="width:100%;">
-        <div class="d-flex justify-center align-end">
-          <img
-            class="d-flex justify-center"
-            style="width: 100%"
-            src="../assets/Webp/Asd/bg.webp"
-          />
-          <div style="background:red;position: absolute;width:30%;" >
+      <div class="d-flex justify-center align-end">
+        <img
+          class="d-flex justify-center"
+          style="width: 100%"
+          src="../assets/Webp/Asd/bg.webp"
+        />
+        <div
+          class="d-flex justify-center  mb-5 backgroundBT"
+          style="background:red;position: absolute;width:30%;max-width:350px;"
+        >
+          <v-card
+            class="pa-0 d-flex justify-center aling-center"
+            outlined
+            tile
+            v-bind="attrs"
+            v-on="on"
+            color="transparent"
+            style="z-index:1;"
+          >
+            <img src="../assets/Webp/Asd/101.webp" style="width:100%;" />
+
+            <img
+              width="100%"
+              src="../assets/Webp/Asd/ez-casino-btn-effect-1.webp"
+              class="effect1"
+              style="position: absolute;"
+            /><img
+              width="100%"
+              src="../assets/Webp/Asd/ez-casino-btn-effect-2.webp"
+              class="effect2"
+              style="position: absolute;"
+            />
             <v-btn
+              outlined
+              style="border-radius: 100px;position: absolute;"
+              text
+              block
+              height="100%"
+              href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+            ></v-btn>
+          </v-card>
+          <!-- 
+              
+              <v-btn
               style="border-radius: 80px;"
-              height="auto"
-              width="70%"
+              fab
               color="success"
               class="backgroundBT"
             >
@@ -23,12 +57,11 @@
                   style="max-width:100%;"
                 />
               </div>
-            </v-btn>
-          </div>
+            </v-btn> -->
         </div>
-      </v-row>
-
-      <!-- <v-card class="d-flex justify-center" outlined color="transparent">
+      </div>
+    </div>
+    <!-- <v-card class="d-flex justify-center" outlined color="transparent">
         <v-btn
           height="auto"
           max-width="20%"
@@ -73,11 +106,8 @@ img {
   height: auto;
 }
 .bgimg {
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/Webp/Asd/bg.webp");
+  background-image: url("../assets/Webp/Asd/101.webp");
   background-size: cover;
-  background-position: center;
 }
 .register {
   max-width: 20%;
@@ -124,7 +154,7 @@ img {
 }
 .backgroundBT {
   position: relative;
-  border-radius: 80px;
+  border-radius: 100px;
   line-height: 48px;
   background: transparent;
   text-transform: uppercase;
@@ -135,7 +165,7 @@ img {
 .backgroundBT::before {
   content: "";
   position: absolute;
-  border-radius: 80px;
+  border-radius: 100px;
   top: 0;
   left: 0;
   width: 100%;
@@ -162,7 +192,7 @@ img {
 .backgroundBT::after {
   content: "";
   position: absolute;
-  border-radius: 80px;
+  border-radius: 100px;
   top: 0;
   left: 0;
   width: 100%;
@@ -215,7 +245,7 @@ img {
   color: rgba(225, 255, 255, 0.2);
   transition: 0.5s;
   // z-index: -1;
-  border-radius: 80px;
+  border-radius: 100px;
 }
 // .BT:hover {
 //   background-image: url("../assets/Webp/Asd/101.webp");

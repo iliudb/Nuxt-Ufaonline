@@ -4,13 +4,104 @@
     <div class="hidden-sm-and-down">
       <div class="d-flex justify-center" style="width: 100%">
         <div class="d-flex align-center" id="ufabar">
+          <!-- Dialog -->
+          <div class="d-flex align-center" style="width:5%">
+            <v-dialog transition="slide-x-transition">
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  dark
+                  color="red"
+                  v-bind="attrs"
+                  v-on="on"
+                  absolute
+                  fab
+                  icon
+                >
+                  <v-icon large>mdi-menu</v-icon>
+                </v-btn>
+              </template>
+
+              <v-card
+                style="
+          max-width: 150px;
+          border-radius: 0px 50px 50px 0px;
+          position: fixed;
+          left: 0;
+          top: 0;
+        "
+                class="py-5"
+              >
+                <v-row
+                  class="justify-center"
+                  style="margin: 20px 0 0 0; margin-top: 15px"
+                >
+                  <a href="https://line.me/th/">
+                    <div>
+                      <img
+                        width="90%"
+                        src="../assets/Webp/Appbar/linebunnyfix.webp"
+                      />
+                    </div>
+                  </a>
+                </v-row>
+
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                    href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100px !important"
+                        src="../assets/Webp/Appbar/1-01.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
+
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                    href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100px !important"
+                        src="../assets/Webp/Appbar/1-02.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
+
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100px !important"
+                        src="../assets/Webp/Appbar/1-03.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
+              </v-card>
+            </v-dialog>
+          </div>
+          <!-- EndDialog -->
           <div class="d-flex align-center" style="height: 100px; width: 30%">
             <img
               style="max-width: 400px; width: 100%"
               src="../assets/Webp/Appbar/logoufa.webp"
             />
           </div>
-          <div class="d-flex flex-wrap justify-center" style="width: 40%">
+          <div class="d-flex flex-wrap justify-center" style="width: 35%">
             <div style="width: 25%" v-for="i in appbar" :key="i.id">
               <img style="width: 100%" :src="i.src" />
             </div>
@@ -42,125 +133,155 @@
     <!-- Mobile -->
     <div class="hidden-md-and-up">
       <div class="d-flex justify-center" style="width: 100%">
+              <!-- Dialog -->
+        <div class="d-flex align-center" style="width:5%">
+          <v-dialog transition="slide-x-transition">
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                dark
+                color="red"
+                v-bind="attrs"
+                v-on="on"
+                absolute
+                fab
+                icon
+              >
+                <v-icon large>mdi-menu</v-icon>
+              </v-btn>
+            </template>
+
+            <v-card
+              style="
+          max-width: 150px;
+          border-radius: 0px 50px 50px 0px;
+          position: fixed;
+          left: 0;
+          top: 0;
+        "
+              class="py-5"
+            >
+              <v-row
+                class="justify-center"
+                style="margin: 20px 0 0 0; margin-top: 15px"
+              >
+                <router-link to="/">
+                  <div @click="oneslotfc()">
+                    <img
+                      width="90%"
+                      src="../assets/Webp/Appbar/linebunnyfix.webp"
+                    />
+                  </div>
+                </router-link>
+              </v-row>
+
+              <v-row class="justify-center">
+                <v-btn
+                  text
+                  style="margin: 20px 0 0 0; height: 120px !important"
+                >
+                  <div>
+                    <img
+                      class="mt-0"
+                      style="width: 100px !important"
+                      src="../assets/Webp/Appbar/1-01.webp"
+                    />
+                  </div>
+                </v-btn>
+              </v-row>
+
+              <v-row class="justify-center">
+                <v-btn
+                  text
+                  style="margin: 20px 0 0 0; height: 120px !important"
+                >
+                  <div>
+                    <img
+                      class="mt-0"
+                      style="width: 100px !important"
+                      src="../assets/Webp/Appbar/1-02.webp"
+                    />
+                  </div>
+                </v-btn>
+              </v-row>
+
+              <v-row class="justify-center">
+                <v-btn
+                  text
+                  style="margin: 20px 0 0 0; height: 120px !important"
+                >
+                  <div>
+                    <img
+                      class="mt-0"
+                      style="width: 100px !important"
+                      src="../assets/Webp/Appbar/1-03.webp"
+                    />
+                  </div>
+                </v-btn>
+              </v-row>
+            </v-card>
+          </v-dialog>
+        </div>
+        <!-- EndDialog -->
+        <v-spacer></v-spacer>
         <div style="width:60%; margin:2.5%">
           <img
             style="width: 100%"
             src="../assets/Webp/Newufabet/ufalogo.webp"
           />
         </div>
+        <v-spacer></v-spacer>
       </div>
     </div>
 
     <div id="loginbottombar" class="hidden-md-and-up">
-      <div>
+      <div
+        class="d-flex justify-center align-end"
+        style="width:100%;height:100%"
+      >
         <v-btn
-          elevation="0"
-          style="
-            background: transparent;
-            width: 20%;
-            height: 100px;
-            margin: 0px;
-          "
-          href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
-        >
-          <div class="justify-center">
-            <div>
-              <img id="navimg101" src="../assets/Webp/Appbar/1-01.webp" />
-            </div>
-            <div>
-              <img id="navimg11" src="../assets/Webp/Appbar/11.webp" />
-            </div>
-          </div>
-        </v-btn>
-
+          style="background: transparent;"
+          height="100%"
+          width="18%"
+          class="align-end"
+          ><img id="navimg101" src="../assets/Webp/Appbar/1-01.webp"
+        /></v-btn>
         <v-btn
-          elevation="0"
-          style="
-            background: transparent;
-            width: 20%;
-            height: 100px;
-            margin: 0px;
-          "
-          href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
-        >
-          <div class="justify-center">
-            <div>
-              <img id="navimg102" src="../assets/Webp/Appbar/1-02.webp" />
-            </div>
-            <div>
-              <img id="navimg22" src="../assets/Webp/Appbar/22.webp" />
-            </div>
-          </div>
-        </v-btn>
-
+          style="background: transparent;"
+          height="100%"
+          width="18%"
+          class="align-end"
+          ><img id="navimg101" src="../assets/Webp/Appbar/1-02.webp"
+        /></v-btn>
+        <v-btn style="background: transparent;" height="100%" width="28%">
+          <img id="navimg102" src="../assets/Webp/Appbar/linebunnyfix.webp"
+        /></v-btn>
         <v-btn
-          elevation="0"
-          style="
-            background: transparent;
-            width: 20%;
-            height: 100px;
-            margin: 0px;
-          "
+          style="background: transparent;"
+          height="100%"
+          width="18%"
+          class="align-end"
         >
-          <div class="justify-center">
-            <div>
-              <img id="navimg103" src="../assets/Webp/Appbar/1-03.webp" />
-            </div>
-            <div>
-              <img id="navimg33" src="../assets/Webp/Appbar/33.webp" />
-            </div>
+          <div id="star1">
+            <div class="star-x1"></div>
+            <div class="star-y1"></div>
           </div>
-        </v-btn>
-
+          <div id="star2">
+            <div class="star-x2"></div>
+            <div class="star-y2"></div>
+          </div>
+          <div id="star3">
+            <div class="star-x3"></div>
+            <div class="star-y3"></div>
+          </div>
+          <img id="navimg101" src="../assets/Webp/Appbar/1-03.webp"
+        /></v-btn>
         <v-btn
-          elevation="0"
-          style="
-            background: transparent;
-            width: 20%;
-            height: 100px;
-            margin: 0px;
-          "
-        >
-          <div class="justify-center">
-            <div>
-              <div id="star1">
-                <div class="star-x1"></div>
-                <div class="star-y1"></div>
-              </div>
-              <div id="star2">
-                <div class="star-x2"></div>
-                <div class="star-y2"></div>
-              </div>
-              <div id="star3">
-                <div class="star-x3"></div>
-                <div class="star-y3"></div>
-              </div>
-              <img id="navimg104" src="../assets/Webp/Appbar/1-04.webp" />
-            </div>
-            <div>
-              <img id="navimg44" src="../assets/Webp/Appbar/44.webp" />
-            </div>
-          </div>
-        </v-btn>
-
-        <v-btn
-          elevation="0"
-          style="
-            background: transparent;
-            width: 20%;
-            height: 100px;
-            margin: 0px;
-          "
-        >
-          <div class="justify-center">
-            <div>
-              <img id="navimg105" src="../assets/Webp/Appbar/1-05.webp" />
-            </div>
-            <div>
-              <img id="navimg55" src="../assets/Webp/Appbar/55.webp" />
-            </div>
-          </div>
-        </v-btn>
+          style="background: transparent;"
+          height="100%"
+          width="18%"
+          class="align-end"
+          ><img id="navimg101" src="../assets/Webp/Appbar/1-04.webp"
+        /></v-btn>
       </div>
     </div>
   </div>
@@ -174,11 +295,11 @@ export default {
         { id: 1, src: require("../assets/Webp/Appbar/promotion.webp") },
         { id: 2, src: require("../assets/Webp/Appbar/activity.webp") },
         { id: 3, src: require("../assets/Webp/Appbar/introduce.webp") },
-        { id: 4, src: require("../assets/Webp/Appbar/article.webp")}
-      ],
+        { id: 4, src: require("../assets/Webp/Appbar/article.webp") }
+      ]
     };
   },
-  name: "AppBar",
+  name: "AppBar"
 };
 </script>
 
@@ -236,7 +357,7 @@ export default {
   min-height: 30px;
 }
 #ufabar {
-  z-index: 1;
+  z-index: 2;
   max-width: 2000px;
   color: white;
   position: fixed;
@@ -252,13 +373,13 @@ export default {
 }
 #star1 {
   position: absolute;
-  top: 20%;
+  top: 0%;
   left: 10%;
 }
 #star2 {
   position: absolute;
   top: 30%;
-  left: 80%;
+  left: 65%;
 }
 #star3 {
   position: absolute;
@@ -269,7 +390,7 @@ export default {
   content: "";
   position: absolute;
   height: 4px;
-  width: 30px;
+  width: 20px;
   background: linear-gradient(
     -45deg,
     rgba(255, 0, 0, 0.7),
@@ -285,7 +406,7 @@ export default {
   content: "";
   position: absolute;
   height: 4px;
-  width: 30px;
+  width: 20px;
   background: linear-gradient(
     -45deg,
     rgba(255, 0, 0, 0.7),
@@ -302,7 +423,7 @@ export default {
   content: "";
   position: absolute;
   height: 4px;
-  width: 30px;
+  width: 20px;
   background: linear-gradient(
     -45deg,
     rgba(255, 0, 0, 0.7),
@@ -318,7 +439,7 @@ export default {
   content: "";
   position: absolute;
   height: 4px;
-  width: 30px;
+  width: 20px;
   background: linear-gradient(
     -45deg,
     rgba(255, 0, 0, 0.7),
@@ -335,7 +456,7 @@ export default {
   content: "";
   position: absolute;
   height: 4px;
-  width: 30px;
+  width: 20px;
   background: linear-gradient(
     -45deg,
     rgba(255, 0, 0, 0.7),
@@ -351,7 +472,7 @@ export default {
   content: "";
   position: absolute;
   height: 4px;
-  width: 30px;
+  width: 20px;
   background: linear-gradient(
     -45deg,
     rgba(255, 0, 0, 0.7),
@@ -434,6 +555,7 @@ export default {
   max-height: 55px;
   @media (min-width: 290px) {
     max-height: 65px;
+    height: 100%;
   }
 }
 #navimg11 {
@@ -445,9 +567,9 @@ export default {
   }
 }
 #navimg102 {
-  max-height: 55px;
+  max-height: 80px;
   @media (min-width: 290px) {
-    max-height: 65px;
+    max-height: 80px;
   }
 }
 #navimg22 {
