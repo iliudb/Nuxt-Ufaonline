@@ -16,8 +16,6 @@
             class="pa-0 d-flex justify-center aling-center"
             outlined
             tile
-            v-bind="attrs"
-            v-on="on"
             color="transparent"
             style="z-index:1;"
           >
