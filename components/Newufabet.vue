@@ -146,7 +146,7 @@ export default {
   div {
     margin: 0px 10px;
     img {
-      width: 90px;
+      width: 100px;
     }
   }
 }

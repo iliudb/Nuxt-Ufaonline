@@ -10,9 +10,13 @@
               src="../assets/Webp/Appbar/logoufa.webp"
             />
           </div>
-          <div class="d-flex flex-wrap justify-center" style="width: 40%">
-            <div style="width: 25%" v-for="i in appbar" :key="i.id">
-              <img style="width: 100%" :src="i.src" />
+          <div class="d-flex flex-wrap" style="width: 40%">
+            <div class="d-flex flex-wrap justify-center" style="width: 25%" v-for="i in appbar" :key="i.id">
+              <div style="width:100%">
+                <a @click="article(i.path)"
+                  ><img style="width: 100%" :src="i.src"
+                /></a>
+              </div>
             </div>
           </div>
           <div style="width: 30%" class="d-flex justify-end">
@@ -42,7 +46,7 @@
     <!-- Mobile -->
     <div class="hidden-md-and-up">
       <div class="d-flex justify-center" style="width: 100%">
-        <div style="width:60%; margin:2.5%">
+        <div style="width: 60%; margin: 2.5%">
           <img
             style="width: 100%"
             src="../assets/Webp/Newufabet/ufalogo.webp"
@@ -174,11 +178,21 @@ export default {
         { id: 1, src: require("../assets/Webp/Appbar/promotion.webp") },
         { id: 2, src: require("../assets/Webp/Appbar/activity.webp") },
         { id: 3, src: require("../assets/Webp/Appbar/introduce.webp") },
-        { id: 4, src: require("../assets/Webp/Appbar/article.webp")}
+        {
+          id: 4,
+          src: require("../assets/Webp/Appbar/article.webp"),
+          path: "seo",
+        },
       ],
     };
   },
-  name: "AppBar",
+  methods: {
+    article(path) {
+      if(path=='seo'){
+        this.$router.push({path:'seo'})
+      }
+    },
+  },
 };
 </script>
 
@@ -236,7 +250,7 @@ export default {
   min-height: 30px;
 }
 #ufabar {
-  z-index: 1;
+  z-index: 2;
   max-width: 2000px;
   color: white;
   position: fixed;
