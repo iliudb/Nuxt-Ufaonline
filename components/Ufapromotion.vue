@@ -16,10 +16,12 @@
       <div class="d-flex">
         <div class="d-flex justify-center flex-wrap" style="width: 60%">
           <div style="width: 100%" class="d-flex justify-center">
-            <img
-              style="width: 100%; max-width: 800px; max-height: 150px"
-              src="../assets/Webp/Ufapromotion/ufalogo.webp"
-            />
+            <div style="width: 100%; max-width: 800px; max-height: 150px">
+              <img
+                style="width: 100%; height: 100%"
+                src="../assets/Webp/Ufapromotion/ufalogo.webp"
+              />
+            </div>
           </div>
           <div id="ufaprohd">เว็บกีฬาออนไลน์ คาสิโนออนไลน์</div>
           <div style="width: 100%">
