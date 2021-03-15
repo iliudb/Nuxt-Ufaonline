@@ -2,7 +2,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   server: {
-    host: '192.168.1.121' // default: localhost
+    host: 'localhost' // default: localhost
   },
 
   axios: {

@@ -1,5 +1,5 @@
 <template>
-  <div class="justify-center">
+  <div style="width:100%; max-width:2000px">
     <div id="redline"></div>
     <!-- Desktop -->
     <div class="hidden-sm-and-down">

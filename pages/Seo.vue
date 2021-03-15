@@ -2,16 +2,20 @@
   <div id="seo" style="color: white; max-width: 100%">
     <div>
       <article>
-        <h1 style="margin: 20px 0px">บทความ</h1>
+        <h1 class="text-center" style="margin: 20px 0px; font-size: 50px">
+          บทความ
+        </h1>
         <div v-for="i in arr" :key="i.id">
-          <div>
-            <div>
-              <h2>
-                {{ i.title }}
-              </h2>
+          <div style="padding: 50px">
+            <div style="font-size: 30px">
+              <a @click="seopage(i)" style="color: white">
+                <strong>
+                  {{ i.title }}
+                </strong>
+              </a>
             </div>
 
-            <div style="word-wrap: break-word; text-align: left">
+            <div class="text-truncate" style="word-wrap: break-word; text-align: left; max-width:1200px">
               {{ i.description }}
             </div>
 
@@ -215,6 +219,9 @@ export default {
     this.seoselecte();
   },
   methods: {
+    seopage(i) {
+      this.$router.push({ path: "Seopage", query: { page: i } });
+    },
     adddiscard() {
       this.seopost.addtitle = "";
       this.seopost.adddescription = "";

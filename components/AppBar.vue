@@ -1,11 +1,11 @@
 <template>
-  <div id="AppBar">
+  <div style="width:100%">
     <!-- Desktop -->
     <div class="hidden-sm-and-down">
       <div class="d-flex justify-center" style="width: 100%">
         <div class="d-flex align-center" id="ufabar">
           <!-- Dialog -->
-          <div class="d-flex align-center" style="width:5%">
+          <div class="d-flex align-center" style="width: 5%">
             <v-dialog transition="slide-x-transition">
               <template v-slot:activator="{ on, attrs }">
                 <v-btn
@@ -23,12 +23,12 @@
 
               <v-card
                 style="
-          max-width: 150px;
-          border-radius: 0px 50px 50px 0px;
-          position: fixed;
-          left: 0;
-          top: 0;
-        "
+                  max-width: 150px;
+                  border-radius: 0px 50px 50px 0px;
+                  position: fixed;
+                  left: 0;
+                  top: 0;
+                "
                 class="py-5"
               >
                 <v-row
@@ -123,7 +123,7 @@
               v-for="i in appbar"
               :key="i.id"
             >
-              <div style="width:100%">
+              <div style="width: 100%">
                 <a @click="article(i.path)"
                   ><img style="width: 100%" :src="i.src"
                 /></a>
@@ -158,7 +158,7 @@
     <div class="hidden-md-and-up">
       <div class="d-flex justify-center" style="width: 100%">
         <!-- Dialog -->
-        <div class="d-flex align-center" style="width:5%">
+        <div class="d-flex align-center" style="width: 5%">
           <v-dialog transition="slide-x-transition">
             <template v-slot:activator="{ on, attrs }">
               <v-btn
@@ -176,12 +176,12 @@
 
             <v-card
               style="
-          max-width: 150px;
-          border-radius: 0px 50px 50px 0px;
-          position: fixed;
-          left: 0;
-          top: 0;
-        "
+                max-width: 150px;
+                border-radius: 0px 50px 50px 0px;
+                position: fixed;
+                left: 0;
+                top: 0;
+              "
               class="py-5"
             >
               <v-row
@@ -264,7 +264,7 @@
         </div>
         <!-- EndDialog -->
         <v-spacer></v-spacer>
-        <div style="width:60%; margin:2.5%">
+        <div style="width: 60%; margin: 2.5%">
           <img
             style="width: 100%"
             src="../assets/Webp/Newufabet/ufalogo.webp"
@@ -277,24 +277,24 @@
     <div id="loginbottombar" class="hidden-md-and-up">
       <div
         class="d-flex justify-center align-end"
-        style="width:100%;height:100%"
+        style="width: 100%; height: 100%"
       >
         <v-btn
-          style="background: transparent;"
+          style="background: transparent"
           height="100%"
           width="18%"
           class="align-end"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-01.webp"
         /></v-btn>
         <v-btn
-          style="background: transparent;"
+          style="background: transparent"
           height="100%"
           width="18%"
           class="align-end"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-02.webp"
         /></v-btn>
         <v-btn
-          style="background: transparent;"
+          style="background: transparent"
           height="100%"
           width="28%"
           href="https://lin.ee/sQCIWhr"
@@ -303,7 +303,7 @@
           <img id="navimg102" src="../assets/Webp/Appbar/linebunnyfix.webp"
         /></v-btn>
         <v-btn
-          style="background: transparent;"
+          style="background: transparent"
           height="100%"
           width="18%"
           class="align-end"
@@ -323,7 +323,7 @@
           <img id="navimg101" src="../assets/Webp/Appbar/1-03.webp"
         /></v-btn>
         <v-btn
-          style="background: transparent;"
+          style="background: transparent"
           height="100%"
           width="18%"
           class="align-end"
@@ -345,9 +345,9 @@ export default {
         {
           id: 4,
           src: require("../assets/Webp/Appbar/article.webp"),
-          path: "seo"
-        }
-      ]
+          path: "seo",
+        },
+      ],
     };
   },
   methods: {
@@ -355,8 +355,8 @@ export default {
       if (path == "seo") {
         this.$router.push({ path: "seo" });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="justify-center">
+  <div style="width:100%; max-width:2000px;">
     <!-- Desktop -->
     <div class="hidden-sm-and-down">
       <div style="color: white; text-align: center; font-size: 40px">

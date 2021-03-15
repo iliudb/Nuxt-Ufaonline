@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="width:100%; max-width:2000px">
     <div id="redlinethic"></div>
 
     <div class="justify-center" style="padding: 0px 0px">

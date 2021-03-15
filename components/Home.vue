@@ -1,26 +1,31 @@
 <template>
-  <div style="background:green;">
+  <div style="width:100%; max-width:2000px">
     <div class="hidden-sm-and-down" style="height: 100px"></div>
-    <div class="d-flex justify-center" style="width:100%;">
-      <div class="align-center" style="width:100%;display:flex;flex-direction:column;">
-        <img
-          style="width: 100%"
-          src="../assets/Webp/Asd/bg.webp"
-        />
+    <div class="d-flex justify-center" style="width: 100%">
+      <div
+        class="align-center"
+        style="width: 100%; display: flex; flex-direction: column"
+      >
+        <img style="width: 100%" src="../assets/Webp/Asd/bg.webp" />
         <div
-          class=" backgroundBT marginBT "
-          style="background:red;position: absolute;width:30%;max-width:350px;"
+          class="backgroundBT marginBT"
+          style="
+            background: red;
+            position: absolute;
+            width: 30%;
+            max-width: 350px;
+          "
         >
           <v-card
             class="pa-0 d-flex justify-center align-center"
             outlined
             tile
             color="transparent"
-            style="z-index:1;"
+            style="z-index: 1"
           >
             <div>
-              <div style="display:flex;flex-direction:column;">
-                <img src="../assets/Webp/Asd/101.webp" style="width:100%;" />
+              <div style="display: flex; flex-direction: column">
+                <img src="../assets/Webp/Asd/101.webp" style="width: 100%" />
               </div>
             </div>
 
@@ -28,16 +33,16 @@
               width="100%"
               src="../assets/Webp/Asd/ez-casino-btn-effect-1.webp"
               class="effect1"
-              style="position: absolute;"
+              style="position: absolute"
             /><img
               width="100%"
               src="../assets/Webp/Asd/ez-casino-btn-effect-2.webp"
               class="effect2"
-              style="position: absolute;"
+              style="position: absolute"
             />
             <v-btn
               outlined
-              style="border-radius: 100px;position: absolute;"
+              style="border-radius: 100px; position: absolute"
               text
               block
               height="100%"
@@ -74,7 +79,6 @@
           </div>
         </v-btn>
       </v-card> -->
-    </div>
   </div>
 </template>
 
@@ -83,11 +87,10 @@ export default {
   data: () => {
     return {};
   },
-  name: "Home"
+  name: "Home",
 };
 </script>
 <style lang="scss" scoped>
-
 img {
   max-width: 100%;
   height: auto;
@@ -102,17 +105,17 @@ img {
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
 }
-.marginBT{
-  margin-top:20%;
+.marginBT {
+  margin-top: 20%;
 }
 @media (min-width: 1500px) {
-  .marginBT{
-  margin-top:22%
+  .marginBT {
+    margin-top: 22%;
   }
 }
 @media (min-width: 1900px) {
-  .marginBT{
-  margin-top:25%
+  .marginBT {
+    margin-top: 25%;
   }
 }
 @media (min-width: 380px) {
@@ -174,13 +177,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    45deg,
-    #f00,
-    #fb0094,
-    #ff0,
-    #f00
-  );
+  background: linear-gradient(45deg, #f00, #fb0094, #ff0, #f00);
   background-size: 400%;
   opacity: 1;
   transition: 0.5%;
@@ -195,14 +192,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    45deg,
-    #ff0,
-    #f00,
-    #fb0094,
-    #ff0,
-    #f00
-  );
+  background: linear-gradient(45deg, #ff0, #f00, #fb0094, #ff0, #f00);
   background-size: 400%;
   opacity: 1;
   // filter: blur(10px);
