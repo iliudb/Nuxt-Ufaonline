@@ -1,6 +1,9 @@
 <template>
-  <div id="seo" style="color: white; max-width: 100%">
-    <div>
+  <div
+    class="d-flex justify-center flex-wrap"
+    style="color: white; width: 100%"
+  >
+    <div style="width: 100%; max-width: 2000px">
       <article>
         <h1 class="text-center" style="margin: 20px 0px; font-size: 50px">
           บทความ
@@ -15,7 +18,10 @@
               </a>
             </div>
 
-            <div class="text-truncate" style="word-wrap: break-word; text-align: left; max-width:1200px">
+            <div
+              class="text-truncate"
+              style="word-wrap: break-word; text-align: left; max-width: 1200px"
+            >
               {{ i.description }}
             </div>
 
@@ -51,59 +57,62 @@
           <hr />
         </div>
       </article>
-    </div>
-
-    <!-- insert -->
-    <div style="border-radius: 50px 50px" dark>
-      <h3>เพิ่มบทความ</h3>
-      <div>
-        <div class="d-flex">
-          <div style="margin-top: 9px; margin-left: 5px">
-            <v-text-field
-              :rules="rules"
-              color="green"
-              label="ชื่อผู้เขียน"
-              type=""
-              v-model="seopost.addauthor"
-            ></v-text-field>
+      <!-- insert -->
+      <div style="border-radius: 50px 50px" dark>
+        <h3>เพิ่มบทความ</h3>
+        <div>
+          <div class="d-flex">
+            <div style="margin-top: 9px; margin-left: 5px">
+              <v-text-field
+                :rules="rules"
+                color="green"
+                label="ชื่อผู้เขียน"
+                type=""
+                v-model="seopost.addauthor"
+              ></v-text-field>
+            </div>
           </div>
-        </div>
-        <v-text-field
-          color="green"
-          label="หัวข้อบทความ"
-          v-model="seopost.addtitle"
-        ></v-text-field>
+          <v-text-field
+            color="green"
+            label="หัวข้อบทความ"
+            v-model="seopost.addtitle"
+          ></v-text-field>
 
-        <div class="d-flex">
-          <v-icon>mdi-camera</v-icon>
-          <div>
-            <input style="color: black" type="file" @change="onFileSelected" />
+          <div class="d-flex">
+            <v-icon>mdi-camera</v-icon>
+            <div>
+              <input
+                style="color: black"
+                type="file"
+                @change="onFileSelected"
+              />
+            </div>
           </div>
+
+          <div class="d-flex">
+            <img style="max-height: 300px" :src="imageURL" />
+          </div>
+
+          <v-textarea
+            color="green"
+            :rules="rulestextarea"
+            counter
+            label="เนื้อหา"
+            v-model="seopost.adddescription"
+          ></v-textarea>
+        </div>
+        <div>
+          <v-btn color="error" @click="adddiscard()"> ยกเลิก </v-btn>
+          <v-btn color="success" @click="addsave()"> บันทึก </v-btn>
         </div>
 
-        <div class="d-flex">
-          <img style="max-height: 300px" :src="imageURL" />
-        </div>
-
-        <v-textarea
-          color="green"
-          :rules="rulestextarea"
-          counter
-          label="เนื้อหา"
-          v-model="seopost.adddescription"
-        ></v-textarea>
+        <v-snackbar v-model="hasSaved" :timeout="2000" absolute bottom left>
+          ระบบได้ทำการบันทึกข้อมูลของท่านแล้ว
+        </v-snackbar>
+        <v-snackbar v-model="notSaved" :timeout="2000" absolute bottom left>
+          โปรดตรวจสอบข้อมูล
+        </v-snackbar>
       </div>
-      <div>
-        <v-btn color="error" @click="adddiscard()"> ยกเลิก </v-btn>
-        <v-btn color="success" @click="addsave()"> บันทึก </v-btn>
-      </div>
-
-      <v-snackbar v-model="hasSaved" :timeout="2000" absolute bottom left>
-        ระบบได้ทำการบันทึกข้อมูลของท่านแล้ว
-      </v-snackbar>
-      <v-snackbar v-model="notSaved" :timeout="2000" absolute bottom left>
-        โปรดตรวจสอบข้อมูล
-      </v-snackbar>
     </div>
 
     <!-- update -->

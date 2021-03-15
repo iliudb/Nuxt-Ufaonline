@@ -1,8 +1,8 @@
 <template>
-  <div style="width: 100%">
+  <div class="d-flex justify-center" style="width: 100%;">
     <!-- <div>seopage {{ page }}</div> -->
     <!-- <div>{{ page.id }}</div> -->
-    <div style="width: 100%" class="d-flex justify-center flex-wrap">
+    <div style="width: 100%; max-width:2000px;" class="d-flex justify-center flex-wrap">
       <article class="d-flex justify-center flex-wrap">
         <div class="d-flex justify-center" style="font-size: 50px; width: 100%">
           <div>
