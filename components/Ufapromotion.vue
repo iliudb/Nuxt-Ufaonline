@@ -16,12 +16,10 @@
       <div class="d-flex">
         <div class="d-flex justify-center flex-wrap" style="width: 60%">
           <div style="width: 100%" class="d-flex justify-center">
-            <div style="width: 100%; max-width: 800px; max-height: 150px">
-              <img
-                style="width: 100%; height: 100%"
-                src="../assets/Webp/Ufapromotion/ufalogo.webp"
-              />
-            </div>
+            <img
+              style="width: 100%; max-width: 800px; max-height: 150px"
+              src="../assets/Webp/Ufapromotion/ufalogo.webp"
+            />
           </div>
           <div id="ufaprohd">เว็บกีฬาออนไลน์ คาสิโนออนไลน์</div>
           <div style="width: 100%">
@@ -81,9 +79,9 @@
 
       <div class="d-flex flex-wrap">
         <div style="width: 100%">
-          <div class="d-flex justify-center">
+          <div style="width: 100%; max-width: 800px; max-height: 150px">
             <img
-              style="width: 100%; max-width: 600px"
+              style="width: 100%; height: 100%"
               src="../assets/Webp/Ufapromotion/ufalogo.webp"
             />
           </div>
@@ -128,15 +126,15 @@ export default {
       "warning",
       "pink darken-2",
       "red lighten-1",
-      "deep-purple accent-4",
+      "deep-purple accent-4"
     ],
     slides: ["First", "Second", "Third", "Fourth", "Fifth"],
     proimg: [
       { id: 1, src: require("../assets/Webp/Ufapromotion/pro01.webp") },
       { id: 2, src: require("../assets/Webp/Ufapromotion/pro02.webp") },
-      { id: 3, src: require("../assets/Webp/Ufapromotion/pro03.webp") },
-    ],
-  }),
+      { id: 3, src: require("../assets/Webp/Ufapromotion/pro03.webp") }
+    ]
+  })
 };
 </script>
 
