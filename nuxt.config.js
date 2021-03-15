@@ -1,6 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  server: {
+    host: '192.168.1.121' // default: localhost
+  },
 
   axios: {
     baseURL: 'http://apiarticle.oneslot.bet/', // Used as fallback if no runtime config is provided
@@ -14,17 +17,17 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - Ufaonline',
-    title: 'Ufaonline',
+    title: 'UFA UFABET เว็บแทงบอลออนไลน์ ได้เงินจริง',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'เว็บบอลออนไลน์ ยูฟ่า เว็บตรงจาก UFABET  เว็บคาสิโนออนไลน์อันดับ 1 เล่นง่ายๆ ได้เงินชัวร์ๆ ฝาก ถอนเงินอัตโนมัติ 24 ชม.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/icon.png' }
     ]
   },
 

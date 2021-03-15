@@ -1,25 +1,28 @@
 <template>
   <div style="background:green;">
     <div class="hidden-sm-and-down" style="height: 100px"></div>
-    <div class="d-flex justify-center">
-      <div class="d-flex justify-center align-end">
+    <div class="d-flex justify-center" style="width:100%;">
+      <div class="align-center" style="width:100%;display:flex;flex-direction:column;">
         <img
-          class="d-flex justify-center"
           style="width: 100%"
           src="../assets/Webp/Asd/bg.webp"
         />
         <div
-          class="d-flex justify-center  mb-5 backgroundBT"
+          class=" backgroundBT marginBT "
           style="background:red;position: absolute;width:30%;max-width:350px;"
         >
           <v-card
-            class="pa-0 d-flex justify-center aling-center"
+            class="pa-0 d-flex justify-center align-center"
             outlined
             tile
             color="transparent"
             style="z-index:1;"
           >
-            <img src="../assets/Webp/Asd/101.webp" style="width:100%;" />
+            <div>
+              <div style="display:flex;flex-direction:column;">
+                <img src="../assets/Webp/Asd/101.webp" style="width:100%;" />
+              </div>
+            </div>
 
             <img
               width="100%"
@@ -41,21 +44,6 @@
               href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
             ></v-btn>
           </v-card>
-          <!-- 
-              
-              <v-btn
-              style="border-radius: 80px;"
-              fab
-              color="success"
-              class="backgroundBT"
-            >
-              <div style="max-width:30%;z-index:1;" class="align-center">
-                <img
-                  src="../assets/Webp/Asd/101.webp"
-                  style="max-width:100%;"
-                />
-              </div>
-            </v-btn> -->
         </div>
       </div>
     </div>
@@ -99,6 +87,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+
 img {
   max-width: 100%;
   height: auto;
@@ -109,28 +98,45 @@ img {
 }
 .register {
   max-width: 20%;
-  border-radius: 80px;
+  border-radius: 100px;
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
+}
+.marginBT{
+  margin-top:20%;
+}
+@media (min-width: 1500px) {
+  .marginBT{
+  margin-top:22%
+  }
+}
+@media (min-width: 1900px) {
+  .marginBT{
+  margin-top:25%
+  }
 }
 @media (min-width: 380px) {
   .register {
     max-width: 15%;
+    border-radius: 100px;
   }
 }
 @media (min-width: 765px) {
   .register {
     max-width: 10%;
+    border-radius: 100px;
   }
 }
 @media (min-width: 1023px) {
   .register {
     max-width: 10%;
+    border-radius: 100px;
   }
 }
 @media (min-width: 1500px) {
   .register {
     max-width: 10%;
+    border-radius: 100px;
   }
 }
 .effect1 {
@@ -170,14 +176,8 @@ img {
   height: 100%;
   background: linear-gradient(
     45deg,
-    #fb0094,
-    #00f,
-    #0f0,
-    #ff0,
     #f00,
     #fb0094,
-    #00f,
-    #0f0,
     #ff0,
     #f00
   );
@@ -197,14 +197,9 @@ img {
   height: 100%;
   background: linear-gradient(
     45deg,
-    #fb0094,
-    #00f,
-    #0f0,
     #ff0,
     #f00,
     #fb0094,
-    #00f,
-    #0f0,
     #ff0,
     #f00
   );
