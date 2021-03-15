@@ -205,7 +205,7 @@ img {
   );
   background-size: 400%;
   opacity: 1;
-  filter: blur(10px);
+  // filter: blur(10px);
   transition: 0.5%;
   // z-index: -1;
   animation: animate 20s linear infinite;
@@ -240,6 +240,7 @@ img {
   // z-index: -1;
   border-radius: 100px;
 }
+
 // .BT:hover {
 //   background-image: url("../assets/Webp/Asd/101.webp");
 // }

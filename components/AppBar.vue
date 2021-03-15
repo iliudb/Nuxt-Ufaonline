@@ -35,7 +35,7 @@
                   class="justify-center"
                   style="margin: 20px 0 0 0; margin-top: 15px"
                 >
-                  <a href="https://line.me/th/">
+                  <a href="https://lin.ee/sQCIWhr" target="_BLANK">
                     <div>
                       <img
                         width="90%"
@@ -55,7 +55,7 @@
                       <img
                         class="mt-0"
                         style="width: 100px !important"
-                        src="../assets/Webp/Appbar/1-01.webp"
+                        src="../assets/Webp/Appbar/11.webp"
                       />
                     </div>
                   </v-btn>
@@ -71,7 +71,7 @@
                       <img
                         class="mt-0"
                         style="width: 100px !important"
-                        src="../assets/Webp/Appbar/1-02.webp"
+                        src="../assets/Webp/Appbar/22.webp"
                       />
                     </div>
                   </v-btn>
@@ -86,7 +86,22 @@
                       <img
                         class="mt-0"
                         style="width: 100px !important"
-                        src="../assets/Webp/Appbar/1-03.webp"
+                        src="../assets/Webp/Appbar/33.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
+
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100px !important"
+                        src="../assets/Webp/Appbar/44.webp"
                       />
                     </div>
                   </v-btn>
@@ -102,7 +117,12 @@
             />
           </div>
           <div class="d-flex flex-wrap" style="width: 40%">
-            <div class="d-flex flex-wrap justify-center" style="width: 25%" v-for="i in appbar" :key="i.id">
+            <div
+              class="d-flex flex-wrap justify-center"
+              style="width: 25%"
+              v-for="i in appbar"
+              :key="i.id"
+            >
               <div style="width:100%">
                 <a @click="article(i.path)"
                   ><img style="width: 100%" :src="i.src"
@@ -137,7 +157,7 @@
     <!-- Mobile -->
     <div class="hidden-md-and-up">
       <div class="d-flex justify-center" style="width: 100%">
-              <!-- Dialog -->
+        <!-- Dialog -->
         <div class="d-flex align-center" style="width:5%">
           <v-dialog transition="slide-x-transition">
             <template v-slot:activator="{ on, attrs }">
@@ -168,26 +188,43 @@
                 class="justify-center"
                 style="margin: 20px 0 0 0; margin-top: 15px"
               >
-                <router-link to="/">
-                  <div @click="oneslotfc()">
+                <a href="https://lin.ee/sQCIWhr" target="_BLANK">
+                  <div>
                     <img
                       width="90%"
                       src="../assets/Webp/Appbar/linebunnyfix.webp"
                     />
                   </div>
-                </router-link>
+                </a>
               </v-row>
 
               <v-row class="justify-center">
                 <v-btn
                   text
                   style="margin: 20px 0 0 0; height: 120px !important"
+                  href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
                 >
                   <div>
                     <img
                       class="mt-0"
                       style="width: 100px !important"
-                      src="../assets/Webp/Appbar/1-01.webp"
+                      src="../assets/Webp/Appbar/11.webp"
+                    />
+                  </div>
+                </v-btn>
+              </v-row>
+
+              <v-row class="justify-center">
+                <v-btn
+                  text
+                  style="margin: 20px 0 0 0; height: 120px !important"
+                  href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+                >
+                  <div>
+                    <img
+                      class="mt-0"
+                      style="width: 100px !important"
+                      src="../assets/Webp/Appbar/22.webp"
                     />
                   </div>
                 </v-btn>
@@ -202,7 +239,7 @@
                     <img
                       class="mt-0"
                       style="width: 100px !important"
-                      src="../assets/Webp/Appbar/1-02.webp"
+                      src="../assets/Webp/Appbar/33.webp"
                     />
                   </div>
                 </v-btn>
@@ -217,7 +254,7 @@
                     <img
                       class="mt-0"
                       style="width: 100px !important"
-                      src="../assets/Webp/Appbar/1-03.webp"
+                      src="../assets/Webp/Appbar/44.webp"
                     />
                   </div>
                 </v-btn>
@@ -256,7 +293,13 @@
           class="align-end"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-02.webp"
         /></v-btn>
-        <v-btn style="background: transparent;" height="100%" width="28%">
+        <v-btn
+          style="background: transparent;"
+          height="100%"
+          width="28%"
+          href="https://lin.ee/sQCIWhr"
+          target="_BLANK"
+        >
           <img id="navimg102" src="../assets/Webp/Appbar/linebunnyfix.webp"
         /></v-btn>
         <v-btn
@@ -302,18 +345,18 @@ export default {
         {
           id: 4,
           src: require("../assets/Webp/Appbar/article.webp"),
-          path: "seo",
-        },
-      ],
+          path: "seo"
+        }
+      ]
     };
   },
   methods: {
     article(path) {
-      if(path=='seo'){
-        this.$router.push({path:'seo'})
+      if (path == "seo") {
+        this.$router.push({ path: "seo" });
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
