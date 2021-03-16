@@ -21,7 +21,8 @@
           :key="i.id"
         >
           <div style="font-size: 30px">
-            <a @click="seopage(i)" style="color: white">
+            <!-- <a :href="'http://ufa-online.bet/Seopage/'+i.id" @click="seopage(i)" style="color: white"> -->
+            <a :href="'http://localhost:3000/Seopage/'+i.id" @click="seopage(i)" style="color: white">
               <div
                 class="text-truncate"
                 style="
@@ -35,7 +36,13 @@
                   <div style="position: relative; top: 45%">
                     <strong
                       class="text-center text-truncate"
-                      style="position: absolute; width: 100%; max-width: 300px; background:white; padding:0 5%"
+                      style="
+                        position: absolute;
+                        width: 100%;
+                        max-width: 300px;
+                        background: white;
+                        padding: 0 5%;
+                      "
                     >
                       {{ i.title }}
                     </strong>
@@ -262,6 +269,8 @@ export default {
   methods: {
     seopage(i) {
       window.open(`http://localhost:3000/Seopage/${i.id}`);
+      // window.open(`http://ufa-online.bet/Seopage/${i.id}`);
+
       // this.$router.push({ path: "Seopage", query: { page: i } });
     },
     adddiscard() {
