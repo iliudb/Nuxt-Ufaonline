@@ -1,18 +1,21 @@
 <template>
-  <div class="d-flex justify-center" style="width: 100%;">
+  <div class="d-flex justify-center" style="width: 100%">
     <!-- <div>seopage {{ page }}</div> -->
     <!-- <div>{{ page.id }}</div> -->
-    <div style="width: 100%; max-width:2000px;" class="d-flex justify-center flex-wrap">
+    <div
+      style="width: 100%; max-width: 2000px"
+      class="d-flex justify-center flex-wrap"
+    >
       <article class="d-flex justify-center flex-wrap">
         <div class="d-flex justify-center" style="font-size: 50px; width: 100%">
           <div>
-            <strong> {{ page.title }} </strong>
+            <strong> {{ seoeditpost.title }} </strong>
           </div>
         </div>
         <div>
           <img
             style="max-width: 500px"
-            :src="'http://image.oneslot.bet/' + page.img"
+            :src="'http://image.oneslot.bet/' + seoeditpost.seoimg"
           />
         </div>
         <div
@@ -24,9 +27,9 @@
             text-align: justify;
           "
         >
-          {{ page.description }}
+          {{ seoeditpost.description }}
         </div>
-        <div>By : {{ page.author }}</div>
+        <div>By : {{ seoeditpost.author }}</div>
       </article>
     </div>
   </div>
@@ -37,10 +40,35 @@ export default {
   data: () => {
     return {
       page: "",
+      seoeditpost: {
+        id: "",
+        title: "",
+        author: "",
+        description: "",
+        seoimg: "",
+      },
     };
   },
   mounted() {
-    this.page = this.$route.query.page;
+    this.page = this.$route.params.page;
+    this.seoselecteone(this.page);
+  },
+  methods: {
+    async seoselecteone(id) {
+      await this.$axios
+        .$get(`/articleone/${id}`)
+        .then((res) => {
+          // console.log(res);
+          this.seoeditpost.id = res.id;
+          this.seoeditpost.title = res.title;
+          this.seoeditpost.description = res.description;
+          this.seoeditpost.author = res.author;
+          this.seoeditpost.seoimg = res.img;
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
   },
 };
 </script>
