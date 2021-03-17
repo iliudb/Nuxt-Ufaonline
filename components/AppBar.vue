@@ -23,7 +23,7 @@
 
               <v-card
                 style="
-                  max-width: 150px;
+                  max-width: 180px;
                   border-radius: 0px 50px 50px 0px;
                   position: fixed;
                   left: 0;
@@ -49,13 +49,13 @@
                   <v-btn
                     text
                     style="margin: 20px 0 0 0; height: 120px !important"
-                    href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
+                    href=""
                   >
                     <div>
                       <img
                         class="mt-0"
-                        style="width: 100px !important"
-                        src="../assets/Webp/Appbar/11.webp"
+                        style="width: 100% !important"
+                        src="../assets/Webp/Appbar/promotion.webp"
                       />
                     </div>
                   </v-btn>
@@ -65,28 +65,13 @@
                   <v-btn
                     text
                     style="margin: 20px 0 0 0; height: 120px !important"
-                    href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+                    href=""
                   >
                     <div>
                       <img
                         class="mt-0"
-                        style="width: 100px !important"
-                        src="../assets/Webp/Appbar/22.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
-
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100px !important"
-                        src="../assets/Webp/Appbar/33.webp"
+                        style="width: 100% !important"
+                        src="../assets/Webp/Appbar/activity.webp"
                       />
                     </div>
                   </v-btn>
@@ -100,8 +85,24 @@
                     <div>
                       <img
                         class="mt-0"
-                        style="width: 100px !important"
-                        src="../assets/Webp/Appbar/44.webp"
+                        style="width: 100% !important"
+                        src="../assets/Webp/Appbar/introduce.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
+
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                    to="/seo"
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100% !important"
+                        src="../assets/Webp/Appbar/article.webp"
                       />
                     </div>
                   </v-btn>
@@ -157,112 +158,113 @@
     <!-- Mobile -->
     <div class="hidden-md-and-up">
       <div class="d-flex justify-center" style="width: 100%">
-        <!-- Dialog -->
-        <div class="d-flex align-center" style="width: 5%">
-          <v-dialog transition="slide-x-transition">
-            <template v-slot:activator="{ on, attrs }">
-              <v-btn
-                dark
-                color="red"
-                v-bind="attrs"
-                v-on="on"
-                absolute
-                fab
-                icon
+          <!-- Dialog -->
+          <div class="d-flex align-center" style="width: 5%">
+            <v-dialog transition="slide-x-transition">
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  dark
+                  color="red"
+                  v-bind="attrs"
+                  v-on="on"
+                  absolute
+                  fab
+                  icon
+                >
+                  <v-icon large>mdi-menu</v-icon>
+                </v-btn>
+              </template>
+
+              <v-card
+                style="
+                  max-width: 180px;
+                  border-radius: 0px 50px 50px 0px;
+                  position: fixed;
+                  left: 0;
+                  top: 0;
+                "
+                class="py-5"
               >
-                <v-icon large>mdi-menu</v-icon>
-              </v-btn>
-            </template>
-
-            <v-card
-              style="
-                max-width: 150px;
-                border-radius: 0px 50px 50px 0px;
-                position: fixed;
-                left: 0;
-                top: 0;
-              "
-              class="py-5"
-            >
-              <v-row
-                class="justify-center"
-                style="margin: 20px 0 0 0; margin-top: 15px"
-              >
-                <a href="https://lin.ee/sQCIWhr" target="_BLANK">
-                  <div>
-                    <img
-                      width="90%"
-                      src="../assets/Webp/Appbar/linebunnyfix.webp"
-                    />
-                  </div>
-                </a>
-              </v-row>
-
-              <v-row class="justify-center">
-                <v-btn
-                  text
-                  style="margin: 20px 0 0 0; height: 120px !important"
-                  href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
+                <v-row
+                  class="justify-center"
+                  style="margin: 20px 0 0 0; margin-top: 15px"
                 >
-                  <div>
-                    <img
-                      class="mt-0"
-                      style="width: 100px !important"
-                      src="../assets/Webp/Appbar/11.webp"
-                    />
-                  </div>
-                </v-btn>
-              </v-row>
+                  <a href="https://lin.ee/sQCIWhr" target="_BLANK">
+                    <div>
+                      <img
+                        width="90%"
+                        src="../assets/Webp/Appbar/linebunnyfix.webp"
+                      />
+                    </div>
+                  </a>
+                </v-row>
 
-              <v-row class="justify-center">
-                <v-btn
-                  text
-                  style="margin: 20px 0 0 0; height: 120px !important"
-                  href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
-                >
-                  <div>
-                    <img
-                      class="mt-0"
-                      style="width: 100px !important"
-                      src="../assets/Webp/Appbar/22.webp"
-                    />
-                  </div>
-                </v-btn>
-              </v-row>
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                    href=""
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100% !important"
+                        src="../assets/Webp/Appbar/promotion.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
 
-              <v-row class="justify-center">
-                <v-btn
-                  text
-                  style="margin: 20px 0 0 0; height: 120px !important"
-                >
-                  <div>
-                    <img
-                      class="mt-0"
-                      style="width: 100px !important"
-                      src="../assets/Webp/Appbar/33.webp"
-                    />
-                  </div>
-                </v-btn>
-              </v-row>
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                    href=""
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100% !important"
+                        src="../assets/Webp/Appbar/activity.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
 
-              <v-row class="justify-center">
-                <v-btn
-                  text
-                  style="margin: 20px 0 0 0; height: 120px !important"
-                >
-                  <div>
-                    <img
-                      class="mt-0"
-                      style="width: 100px !important"
-                      src="../assets/Webp/Appbar/44.webp"
-                    />
-                  </div>
-                </v-btn>
-              </v-row>
-            </v-card>
-          </v-dialog>
-        </div>
-        <!-- EndDialog -->
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100% !important"
+                        src="../assets/Webp/Appbar/introduce.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
+
+                <v-row class="justify-center">
+                  <v-btn
+                    text
+                    style="margin: 20px 0 0 0; height: 120px !important"
+                    to="/seo"
+                  >
+                    <div>
+                      <img
+                        class="mt-0"
+                        style="width: 100% !important"
+                        src="../assets/Webp/Appbar/article.webp"
+                      />
+                    </div>
+                  </v-btn>
+                </v-row>
+              </v-card>
+            </v-dialog>
+          </div>
+          <!-- EndDialog -->
         <v-spacer></v-spacer>
         <div style="width: 60%; margin: 2.5%">
           <img
@@ -276,37 +278,38 @@
 
     <div id="loginbottombar" class="hidden-md-and-up">
       <div
-        class="d-flex justify-center align-end"
-        style="width: 100%; height: 100%"
+        class="d-flex justify-center align-center"
+        style="width: 100%; height: 100%;padding: 0 12px;"
       >
         <v-btn
           style="background: transparent"
           height="100%"
-          width="18%"
-          class="align-end"
+          width="20%"
+          class="align-end pa-0 align-center"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-01.webp"
         /></v-btn>
         <v-btn
           style="background: transparent"
           height="100%"
-          width="18%"
-          class="align-end"
+          width="20%"
+          class="align-end pa-0 align-center"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-02.webp"
         /></v-btn>
         <v-btn
           style="background: transparent"
           height="100%"
-          width="28%"
+          width="20%"
           href="https://lin.ee/sQCIWhr"
           target="_BLANK"
+          class="pa-0 align-start"
         >
           <img id="navimg102" src="../assets/Webp/Appbar/linebunnyfix.webp"
         /></v-btn>
         <v-btn
           style="background: transparent"
           height="100%"
-          width="18%"
-          class="align-end"
+          width="20%"
+          class="align-end pa-0 align-center"
         >
           <div id="star1">
             <div class="star-x1"></div>
@@ -325,8 +328,8 @@
         <v-btn
           style="background: transparent"
           height="100%"
-          width="18%"
-          class="align-end"
+          width="20%"
+          class="align-end pa-0 align-center"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-04.webp"
         /></v-btn>
       </div>
@@ -365,9 +368,19 @@ export default {
   background-color: black;
   position: fixed;
   bottom: 0px;
-  height: 80px;
+  height: 100px;
   width: 100%;
   z-index: 1;
+}
+@media (min-width: 750px) {
+  #loginbottombar {
+  background-color: black;
+  position: fixed;
+  bottom: 0px;
+  height: 140px;
+  width: 100%;
+  z-index: 1;
+}
 }
 #ufaregis {
   margin: 0px 5px;
@@ -608,10 +621,15 @@ export default {
     transform: scale(0, 0) rotateZ(0deg);
   }
 }
+
 #navimg101 {
-  max-height: 55px;
+  max-height: 60px;
   @media (min-width: 290px) {
-    max-height: 65px;
+    max-height: 85px;
+    height: 100%;
+  }
+  @media (min-width: 750px) {
+    max-height: 100px;
     height: 100%;
   }
 }
@@ -624,9 +642,12 @@ export default {
   }
 }
 #navimg102 {
-  max-height: 80px;
+  max-height: 60px;
   @media (min-width: 290px) {
     max-height: 80px;
+  }
+  @media (min-width: 750px) {
+    max-height: 120px;
   }
 }
 #navimg22 {

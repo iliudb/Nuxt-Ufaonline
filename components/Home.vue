@@ -1,54 +1,112 @@
 <template>
   <div style="width:100%; max-width:2000px">
     <div class="hidden-sm-and-down" style="height: 100px"></div>
-    <div class="d-flex justify-center" style="width: 100%">
-      <div
-        class="align-center"
-        style="width: 100%; display: flex; flex-direction: column"
-      >
-        <img style="width: 100%" src="../assets/Webp/Asd/bg.webp" />
+    <!-- Desktop -->
+    <div class="hidden-sm-and-down">
+      <div class="d-flex justify-center" style="width: 100%;">
         <div
-          class="backgroundBT marginBT"
-          style="
+          class="align-center"
+          style="width: 100%; display: flex; flex-direction: column;"
+        >
+          <img style="width: 100%" src="../assets/Webp/Asd/bg.webp" />
+          <div
+            class="backgroundBT marginBT"
+            style="
             background: red;
             position: absolute;
             width: 30%;
             max-width: 350px;
           "
-        >
-          <v-card
-            class="pa-0 d-flex justify-center align-center"
-            outlined
-            tile
-            color="transparent"
-            style="z-index: 1"
           >
-            <div>
-              <div style="display: flex; flex-direction: column">
-                <img src="../assets/Webp/Asd/101.webp" style="width: 100%" />
-              </div>
-            </div>
-
-            <img
-              width="100%"
-              src="../assets/Webp/Asd/ez-casino-btn-effect-1.webp"
-              class="effect1"
-              style="position: absolute"
-            /><img
-              width="100%"
-              src="../assets/Webp/Asd/ez-casino-btn-effect-2.webp"
-              class="effect2"
-              style="position: absolute"
-            />
-            <v-btn
+            <v-card
+              class=" d-flex justify-center align-center"
               outlined
-              style="border-radius: 100px; position: absolute"
-              text
-              block
-              height="100%"
-              href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
-            ></v-btn>
-          </v-card>
+              tile
+              color="transparent"
+              style="z-index: 1;padding:2px;"
+            >
+              <div>
+                <div style="display: flex; flex-direction: column">
+                  <img src="../assets/Webp/Asd/101.webp" style="width: 100%" />
+                </div>
+              </div>
+
+              <img
+                width="100%"
+                src="../assets/Webp/Asd/ez-casino-btn-effect-1.webp"
+                class="effect1"
+                style="position: absolute"
+              /><img
+                width="100%"
+                src="../assets/Webp/Asd/ez-casino-btn-effect-2.webp"
+                class="effect2"
+                style="position: absolute"
+              />
+              <v-btn
+                outlined
+                style="border-radius: 100px; position: absolute"
+                text
+                block
+                height="100%"
+                href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+              ></v-btn>
+            </v-card>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="hidden-md-and-up">
+      <div class="d-flex justify-center" style="width: 100%;">
+        <div
+          class="align-center"
+          style="width: 100%; display: flex; flex-direction: column;"
+        >
+          <div class="BTimg"></div>
+          <div
+            class="backgroundBT marginBT"
+            style="
+            background: red;
+            position: absolute;
+            width: 30%;
+            max-width: 350px;
+          "
+          >
+            <v-card
+              class="d-flex justify-center align-center"
+              outlined
+              tile
+              color="transparent"
+              style="z-index: 1"
+            >
+              <div>
+                <div style="display: flex; flex-direction: column">
+                  <img src="../assets/Webp/Asd/101.webp" style="width: 100%" />
+                </div>
+              </div>
+
+              <img
+                width="100%"
+                src="../assets/Webp/Asd/ez-casino-btn-effect-1.webp"
+                class="effect1"
+                style="position: absolute"
+              /><img
+                width="100%"
+                src="../assets/Webp/Asd/ez-casino-btn-effect-2.webp"
+                class="effect2"
+                style="position: absolute"
+              />
+              <v-btn
+                outlined
+                style="border-radius: 100px; position: absolute"
+                text
+                block
+                height="100%"
+                href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+              ></v-btn>
+            </v-card>
+          </div>
         </div>
       </div>
     </div>
@@ -87,10 +145,38 @@ export default {
   data: () => {
     return {};
   },
-  name: "Home",
+  name: "Home"
 };
 </script>
 <style lang="scss" scoped>
+.BTimg {
+  background-image: url("../assets/Webp/Asd/bg.webp");
+  background-color: transparent;
+  background-size: cover;
+  width: 100%;
+  height: 170px;
+  background-position: center;
+}
+@media (min-width: 750px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/bg.webp");
+    background-color: transparent;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+  }
+}
+@media (max-width: 300px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/bg.webp");
+    background-color: transparent;
+    background-size: cover;
+    width: 100%;
+    height: 125px;
+    background-position: center;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -106,7 +192,12 @@ img {
   -webkit-border-radius: 80px;
 }
 .marginBT {
-  margin-top: 20%;
+  margin-top: 25%;
+}
+@media (min-width: 1000px) {
+  .marginBT {
+    margin-top: 18%;
+  }
 }
 @media (min-width: 1500px) {
   .marginBT {
@@ -118,28 +209,39 @@ img {
     margin-top: 25%;
   }
 }
+@media (min-width: 2000px) {
+  .marginBT {
+    margin-top: 20%;
+  }
+}
+@media (min-width: 2350px) {
+  .marginBT {
+    margin-top: 18%;
+  }
+}
+@media (min-width: 2650px) {
+  .marginBT {
+    margin-top: 15%;
+  }
+}
 @media (min-width: 380px) {
   .register {
     max-width: 15%;
-    border-radius: 100px;
   }
 }
 @media (min-width: 765px) {
   .register {
     max-width: 10%;
-    border-radius: 100px;
   }
 }
 @media (min-width: 1023px) {
   .register {
     max-width: 10%;
-    border-radius: 100px;
   }
 }
 @media (min-width: 1500px) {
   .register {
     max-width: 10%;
-    border-radius: 100px;
   }
 }
 .effect1 {
