@@ -4,36 +4,79 @@
     style="color: white; width: 100%"
   >
     <div style="width: 100%; max-width: 2000px">
-      <article>
-        <h1 class="text-center" style="margin: 20px 0px; font-size: 50px">
-          บทความ
-        </h1>
-        <div v-for="i in arr" :key="i.id">
-          <div style="padding: 50px">
-            <div style="font-size: 30px">
-              <a @click="seopage(i)" style="color: white">
-                <strong>
-                  {{ i.title }}
-                </strong>
-              </a>
-            </div>
+      <h1 class="text-center" style="margin: 20px 0px; font-size: 50px">
+        บทความ
+      </h1>
+      <article class="d-flex justify-center flex-wrap">
+        <div
+          class="text-center"
+          style="
+            width: 100%;
+            max-width: 300px;
+            height: 300px;
+            background: white;
+            margin: 1% 1%;
+          "
+          v-for="i in arr"
+          :key="i.id"
+        >
+          <div style="font-size: 30px">
+            <!-- <a :href="'http://ufa-online.bet/Seopage/'+i.id" @click="seopage(i)" style="color: white"> -->
+            <a :href="'http://localhost:3000/Seopage/'+i.id" @click="seopage(i)" style="color: white">
+              <div
+                class="text-truncate"
+                style="
+                  word-wrap: break-word;
+                  text-align: left;
+                  max-width: 300px;
+                  color: black;
+                "
+              >
+                <div style="width: 300px; height: 300px">
+                  <div style="position: relative; top: 45%">
+                    <strong
+                      class="text-center text-truncate"
+                      style="
+                        position: absolute;
+                        width: 100%;
+                        max-width: 300px;
+                        background: white;
+                        padding: 0 5%;
+                      "
+                    >
+                      {{ i.title }}
+                    </strong>
+                  </div>
+                  <div style="widthL100%; height:100%;">
+                    <img
+                      id="imgseo"
+                      :src="'http://image.oneslot.bet/' + i.img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
 
-            <div
+    <!-- <div
               class="text-truncate"
               style="word-wrap: break-word; text-align: left; max-width: 1200px"
             >
               {{ i.description }}
-            </div>
+            </div> -->
 
-            <div>
+    <!-- <div>
               <a @click="seoimgfu('http://image.oneslot.bet/' + i.img)">
                 <img
                   style="max-width: 300px"
                   :src="'http://image.oneslot.bet/' + i.img"
               /></a>
-            </div>
+            </div> -->
 
-            <div>
+    <!-- <div>
               <div class="d-flex">
                 <div style="word-wrap: break-word; text-align: left">
                   ผู้เขียน : {{ i.author }}
@@ -41,24 +84,21 @@
 
                 <v-spacer></v-spacer>
                 <div>
-                  <v-btn
+                <v-btn
                     icon
                     @click="seoselecteone(i.id), (updatedialog = true)"
                   >
                     <v-icon> mdi-file-document-edit-outline </v-icon>
                   </v-btn>
-                  <v-btn class="mr-5" icon @click="seodelete(i.id)">
+                <v-btn class="mr-5" icon @click="seodelete(i.id)">
                     <v-icon> mdi-close-circle </v-icon>
                   </v-btn>
                 </div>
               </div>
-            </div>
-          </div>
-          <hr />
-        </div>
-      </article>
-      <!-- insert -->
-      <div style="border-radius: 50px 50px" dark>
+            </div> -->
+
+    <!-- insert -->
+    <!-- <div style="border-radius: 50px 50px" dark>
         <h3>เพิ่มบทความ</h3>
         <div>
           <div class="d-flex">
@@ -112,11 +152,10 @@
         <v-snackbar v-model="notSaved" :timeout="2000" absolute bottom left>
           โปรดตรวจสอบข้อมูล
         </v-snackbar>
-      </div>
-    </div>
+      </div> -->
 
     <!-- update -->
-    <v-dialog
+    <!-- <v-dialog
       v-model="updatedialog"
       max-width="600px"
       transition="dialog-transition"
@@ -185,7 +224,7 @@
     </v-dialog>
     <v-dialog max-width="500px" v-model="seoloopdialog">
       <img style="width: 500px" :src="seoimgurl" />
-    </v-dialog>
+    </v-dialog> -->
   </div>
 </template>
 
@@ -229,7 +268,10 @@ export default {
   },
   methods: {
     seopage(i) {
-      this.$router.push({ path: "Seopage", query: { page: i } });
+      window.open(`http://localhost:3000/Seopage/${i.id}`);
+      // window.open(`http://ufa-online.bet/Seopage/${i.id}`);
+
+      // this.$router.push({ path: "Seopage", query: { page: i } });
     },
     adddiscard() {
       this.seopost.addtitle = "";
@@ -397,4 +439,13 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+#imgseo {
+  height: auto;
+  opacity: 0.5;
+}
+#imgseo:hover {
+  height: auto;
+  opacity: 1;
+}
+</style>
