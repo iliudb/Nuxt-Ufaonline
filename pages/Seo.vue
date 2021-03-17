@@ -22,7 +22,7 @@
         >
           <div style="font-size: 30px">
             <!-- <a :href="'http://ufa-online.bet/Seopage/'+i.id" @click="seopage(i)" style="color: white"> -->
-            <a :href="'http://localhost:3000/Seopage/'+i.id" @click="seopage(i)" style="color: white">
+            <a :href="'http://localhost:3000/Seopage/'+i.id" style="color: white">
               <div
                 class="text-truncate"
                 style="
