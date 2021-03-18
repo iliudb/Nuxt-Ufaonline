@@ -1,43 +1,48 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from "vuetify/es5/util/colors";
 
 export default {
   server: {
-    host: 'localhost' // default: localhost
+    host: "localhost" // default: localhost
+  },
+
+  generate: {
+    fallback: true
   },
 
   axios: {
-    baseURL: 'http://apiarticle.oneslot.bet/', // Used as fallback if no runtime config is provided
+    baseURL: "http://apiarticle.oneslot.bet/" // Used as fallback if no runtime config is provided
   },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - Ufaonline',
-    title: 'UFA UFABET เว็บแทงบอลออนไลน์ ได้เงินจริง',
+    titleTemplate: "%s - Ufaonline",
+    title: "UFA UFABET เว็บแทงบอลออนไลน์ ได้เงินจริง",
     htmlAttrs: {
-      lang: 'en'
+      lang: "en"
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'เว็บบอลออนไลน์ ยูฟ่า เว็บตรงจาก UFABET  เว็บคาสิโนออนไลน์อันดับ 1 เล่นง่ายๆ ได้เงินชัวร์ๆ ฝาก ถอนเงินอัตโนมัติ 24 ชม.' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "เว็บบอลออนไลน์ ยูฟ่า เว็บตรงจาก UFABET  เว็บคาสิโนออนไลน์อันดับ 1 เล่นง่ายๆ ได้เงินชัวร์ๆ ฝาก ถอนเงินอัตโนมัติ 24 ชม."
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/png', href: '/icon.png' }
-    ]
+    link: [{ rel: "icon", type: "image/png", href: "/icon.png" }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -45,17 +50,15 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    "@nuxtjs/vuetify"
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    ['@nuxtjs/axios']
-  ],
+  modules: [["@nuxtjs/axios"]],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ["~/assets/variables.scss"],
     theme: {
       dark: true,
       themes: {
@@ -73,6 +76,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
-}
+  build: {}
+};
