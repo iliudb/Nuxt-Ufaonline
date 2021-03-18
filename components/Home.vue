@@ -110,33 +110,6 @@
         </div>
       </div>
     </div>
-    <!-- <v-card class="d-flex justify-center" outlined color="transparent">
-        <v-btn
-          height="auto"
-          max-width="20%"
-          color="transparent"
-          style="border-radius: 80px"
-        >
-          <div class="register">
-            <div class="backgroundBT">
-              <img
-                src="../assets/Webp/Asd/101.webp"
-                class="d-flex justify-center"
-                width="100%"
-              />
-              <img
-                width="100%"
-                src="../assets/Webp/Asd/ez-casino-btn-effect-1.webp"
-                class="effect1"
-              /><img
-                width="100%"
-                src="../assets/Webp/Asd/ez-casino-btn-effect-2.webp"
-                class="effect2"
-              />
-            </div>
-          </div>
-        </v-btn>
-      </v-card> -->
   </div>
 </template>
 
@@ -181,16 +154,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.bgimg {
-  background-image: url("../assets/Webp/Asd/101.webp");
-  background-size: cover;
-}
-.register {
-  max-width: 20%;
-  border-radius: 100px;
-  -moz-border-radius: 80px;
-  -webkit-border-radius: 80px;
-}
+
 .marginBT {
   margin-top: 25%;
 }
@@ -224,26 +188,7 @@ img {
     margin-top: 15%;
   }
 }
-@media (min-width: 380px) {
-  .register {
-    max-width: 15%;
-  }
-}
-@media (min-width: 765px) {
-  .register {
-    max-width: 10%;
-  }
-}
-@media (min-width: 1023px) {
-  .register {
-    max-width: 10%;
-  }
-}
-@media (min-width: 1500px) {
-  .register {
-    max-width: 10%;
-  }
-}
+
 .effect1 {
   animation: effect 2s linear infinite;
 }
@@ -332,8 +277,4 @@ img {
   // z-index: -1;
   border-radius: 100px;
 }
-
-// .BT:hover {
-//   background-image: url("../assets/Webp/Asd/101.webp");
-// }
 </style>
