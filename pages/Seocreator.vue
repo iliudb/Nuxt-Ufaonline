@@ -4,109 +4,47 @@
     style="color: white; width: 100%"
   >
     <div style="width: 100%; max-width: 2000px">
-      <h1 class="text-center" style="margin: 20px 0px; font-size: 50px">
-        {{ type }}
-      </h1>
-      <article class="d-flex justify-center flex-wrap">
+      <div v-for="i in arr" :key="i.id">
+        <div>{{ i.title }}</div>
         <div
-          class="text-center"
-          style="
-            width: 100%;
-            max-width: 300px;
-            height: 300px;
-            background: white;
-            margin: 1% 1%;
-          "
-          v-for="i in arr"
-          :key="i.id"
+          class="text-truncate"
+          style="word-wrap: break-word; text-align: left; max-width: 1200px"
         >
-          <div style="font-size: 30px;">
-            <!-- <a :href="'http://ufa-online.bet/Seopage/'+i.id" style="color: white"> -->
-            <a
-              :href="'http://localhost:3000/Seopage?page=' + i.id"
-              style="color: white; text-decoration:none"
-            >
-              <!-- <a :href="'http://localhost:3000/Seopage?page=86'" style="color: white"> -->
-              <div
-                class="text-truncate"
-                style="
-                  word-wrap: break-word;
-                  text-align: left;
-                  max-width: 300px;
-                  color: black;
-                "
-              >
-                <div style="width: 300px; height: 300px">
-                  <div style="position: relative; top: 45%">
-                    <strong
-                      class="text-center text-truncate"
-                      style="
-                        position: absolute;
-                        width: 100%;
-                        max-width: 300px;
-                        background: white;
-                        padding: 0 5%;
-                      "
-                    >
-                      {{ i.title }}
-                    </strong>
-                  </div>
-                  <div
-                    class="d-flex justify-center align-center"
-                    style="widthL100%; height:100%;"
-                  >
-                    <img
-                      id="imgseo"
-                      :src="'http://image.oneslot.bet/' + i.img"
-                    />
-                  </div>
-                </div>
-              </div>
-            </a>
+          {{ i.description }}
+        </div>
+
+        <div>
+          <a @click="seoimgfu('http://image.oneslot.bet/' + i.img)">
+            <img
+              style="max-width: 300px"
+              :src="'http://image.oneslot.bet/' + i.img"
+          /></a>
+        </div>
+
+        <div>
+          <div class="d-flex">
+            <div style="word-wrap: break-word; text-align: left">
+              ผู้เขียน : {{ i.author }}
+            </div>
+
+            <v-spacer></v-spacer>
+            <div>
+              <v-btn icon @click="seoselecteone(i.id), (updatedialog = true)">
+                <v-icon> mdi-file-document-edit-outline </v-icon>
+              </v-btn>
+              <v-btn class="mr-5" icon @click="seodelete(i.id)">
+                <v-icon> mdi-close-circle </v-icon>
+              </v-btn>
+            </div>
           </div>
         </div>
-      </article>
+        <hr />
+      </div>
     </div>
 
-    <!-- <div
-              class="text-truncate"
-              style="word-wrap: break-word; text-align: left; max-width: 1200px"
-            >
-              {{ i.description }}
-            </div> -->
-
-    <!-- <div>
-              <a @click="seoimgfu('http://image.oneslot.bet/' + i.img)">
-                <img
-                  style="max-width: 300px"
-                  :src="'http://image.oneslot.bet/' + i.img"
-              /></a>
-            </div> -->
-
-    <!-- <div>
-              <div class="d-flex">
-                <div style="word-wrap: break-word; text-align: left">
-                  ผู้เขียน : {{ i.author }}
-                </div>
-
-                <v-spacer></v-spacer>
-                <div>
-                <v-btn
-                    icon
-                    @click="seoselecteone(i.id), (updatedialog = true)"
-                  >
-                    <v-icon> mdi-file-document-edit-outline </v-icon>
-                  </v-btn>
-                <v-btn class="mr-5" icon @click="seodelete(i.id)">
-                    <v-icon> mdi-close-circle </v-icon>
-                  </v-btn>
-                </div>
-              </div>
-            </div> -->
-
     <!-- insert -->
-    <!-- <div style="border-radius: 50px 50px" dark>
-      <h3>เพิ่มบทความ</h3>
+    <div style="border-radius: 50px 50px; width: 100%">
+      <h1>เพิ่มบทความ</h1>
       <div>
         <div class="d-flex">
           <div style="margin-top: 9px; margin-left: 5px">
@@ -125,11 +63,16 @@
           v-model="seopost.addtitle"
         ></v-text-field>
 
-        <v-text-field
+        <v-select
+          :items="types"
+          label="ประเภทบทความ"
+          v-model="seopost.addtype"
+        ></v-select>
+        <!-- <v-text-field
           color="green"
           label="ประเภทบทความ"
           v-model="seopost.addtype"
-        ></v-text-field>
+        ></v-text-field> -->
 
         <div class="d-flex">
           <v-icon>mdi-camera</v-icon>
@@ -160,18 +103,15 @@
       <v-snackbar v-model="notSaved" :timeout="2000" absolute bottom left>
         โปรดตรวจสอบข้อมูล
       </v-snackbar>
-    </div> -->
+    </div>
 
     <!-- update -->
-    <!-- <v-dialog
+    <v-dialog
       v-model="updatedialog"
       max-width="600px"
-      transition="dialog-transition"
+      transition="dialog-transition;"
     >
-      <div
-        style="background: black; padding: 20px; border-radius: 50px"
-        class="overflow-hidden"
-      >
+      <div style="background: black; padding: 20px" class="overflow-hidden">
         <div>
           <v-text-field
             :rules="rules"
@@ -187,6 +127,18 @@
             v-model="seoeditpost.title"
           ></v-text-field>
 
+          <v-select
+            :items="types"
+            label="ประเภทบทความ"
+            v-model="seoeditpost.type"
+          ></v-select>
+
+          <!-- <v-text-field
+            color="green"
+            label="ประเภทบทความ"
+            v-model="seopost.addtype"
+          ></v-text-field> -->
+
           <div class="d-flex">
             <div><v-icon>mdi-account</v-icon></div>
             <div>
@@ -201,7 +153,7 @@
           </div>
           <div v-if="imageURLupdate == ''">
             <img
-              style="max-width: 200px"
+              style="max-width: 150px"
               :src="'http://image.oneslot.bet/' + seoeditpost.seoimg"
             />
           </div>
@@ -213,7 +165,6 @@
             <v-textarea
               counter
               label="เนื้อหา"
-              :rules="rulestextarea"
               v-model="seoeditpost.description"
               auto-grow
             ></v-textarea>
@@ -232,7 +183,7 @@
     </v-dialog>
     <v-dialog max-width="500px" v-model="seoloopdialog">
       <img style="width: 500px" :src="seoimgurl" />
-    </v-dialog> -->
+    </v-dialog>
   </div>
 </template>
 
@@ -240,7 +191,9 @@
 export default {
   data: () => {
     return {
-      type: "",
+      //   type: "",
+
+      types: ["UFA", "Football", "Casino"],
 
       seoeditpost: {
         id: "",
@@ -276,9 +229,9 @@ export default {
     };
   },
   mounted() {
-    this.type = this.$route.query.type;
-    this.seotype(this.type);
-    // this.seoselecte();
+    // this.type = this.$route.query.type;
+    // this.seotype(this.type);
+    this.seoselecte();
   },
   methods: {
     async seotype(type) {
@@ -342,7 +295,7 @@ export default {
           // console.log("data", res);
           this.arr = res;
           this.seoeditpost.seoimg = "404.jpg";
-          // console.log("arr", this.arr);
+          //   console.log("arr", this.arr);
         })
         .catch((err) => {
           console.log(err);
@@ -366,7 +319,7 @@ export default {
           this.seopost.addseoimg = "";
           this.seopost.addtype = "";
           this.imageURL = "";
-          this.seotype(this.type);
+          this.seoselecte();
         })
         .catch((err) => {
           console.log(err);
@@ -385,7 +338,7 @@ export default {
         .$patch(`/article`, formData)
         .then(() => {
           // console.log(res.data);
-          this.seotype(this.type);
+          this.seoselecte();
           this.seoeditpost.id = "";
           this.seoeditpost.title = "";
           this.seoeditpost.description = "";
@@ -404,7 +357,7 @@ export default {
         .$delete(`/article/${id}`)
         .then(() => {
           // console.log(res.data);
-          this.seotype(this.type);
+          this.seoselecte();
         })
         .catch((err) => {
           console.log(err);
@@ -414,7 +367,7 @@ export default {
       await this.$axios
         .$get(`/articleone/${id}`)
         .then((res) => {
-          // console.log(res);
+          console.log(res);
           this.seoeditpost.id = res.id;
           this.seoeditpost.title = res.title;
           this.seoeditpost.description = res.description;
@@ -451,7 +404,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.v-dialog {
+  box-shadow: 0px 0px 0px 0px;
+}
 #imgseo {
   height: 100%;
   opacity: 0.5;

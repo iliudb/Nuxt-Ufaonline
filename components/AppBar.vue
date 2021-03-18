@@ -96,7 +96,7 @@
                   <v-btn
                     text
                     style="margin: 20px 0 0 0; height: 120px !important"
-                    to="/seo"
+                    to="/seotype"
                   >
                     <div>
                       <img
@@ -250,7 +250,7 @@
                   <v-btn
                     text
                     style="margin: 20px 0 0 0; height: 120px !important"
-                    to="/seo"
+                    to="/seotype"
                   >
                     <div>
                       <img
@@ -356,7 +356,7 @@ export default {
   methods: {
     article(path) {
       if (path == "seo") {
-        this.$router.push({ path: "seo" });
+        this.$router.push({ path: "seotype" });
       }
     },
   },

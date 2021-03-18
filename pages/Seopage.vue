@@ -46,11 +46,12 @@ export default {
         author: "",
         description: "",
         seoimg: "",
+        type:""
       },
     };
   },
   mounted() {
-    this.page = this.$route.params.page;
+    this.page = this.$route.query.page;
     this.seoselecteone(this.page);
   },
   methods: {
@@ -58,12 +59,13 @@ export default {
       await this.$axios
         .$get(`/articleone/${id}`)
         .then((res) => {
-          // console.log(res);
+          console.log(res);
           this.seoeditpost.id = res.id;
           this.seoeditpost.title = res.title;
           this.seoeditpost.description = res.description;
           this.seoeditpost.author = res.author;
           this.seoeditpost.seoimg = res.img;
+          this.seoeditpost.type = res.type;
         })
         .catch((err) => {
           console.log(err);
