@@ -154,7 +154,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 .marginBT {
   margin-top: 25%;
 }
