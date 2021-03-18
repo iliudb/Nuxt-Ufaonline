@@ -10,14 +10,16 @@
       <article class="d-flex justify-center flex-wrap">
         <div style="margin: 1%" v-for="i in seotype" :key="i.id">
           <!-- :href="'http://ufa-online.bet/seo/'+i.value" -->
-          <a
+          <!-- <a
             style="width: 100%; text-decoration: none"
             :href="'http://localhost:3000/seo?type=' + i.type"
+          > -->
+          <a
+            style="width: 100%; text-decoration: none"
+            :href="'http://localhost:3000/seo/' + i.type"
           >
             <div class="d-flex justify-center align-center" id="seotype">
-              <div style="">
-
-              </div>
+              <div style=""></div>
               <div
                 class="d-flex justify-center align-center"
                 style="
@@ -58,19 +60,19 @@ export default {
       seotype: [
         {
           id: 1,
-          type:"UFA",
+          type: "UFA",
           value: "UFA",
           img: require("../assets/Webp/Seotype/article01.webp"),
         },
         {
           id: 2,
-          type:"Football",
+          type: "Football",
           value: "ฟุตบอล Football",
           img: require("../assets/Webp/Seotype/article02.webp"),
         },
         {
           id: 3,
-          type:"Casino",
+          type: "Casino",
           value: "คาสิโน Casino",
           img: require("../assets/Webp/Seotype/article03.webp"),
         },
