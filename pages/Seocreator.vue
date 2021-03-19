@@ -4,8 +4,11 @@
     style="color: white; width: 100%"
   >
     <div style="width: 100%; max-width: 2000px">
-      <div v-for="i in arr" :key="i.id">
-        <div>{{ i.title }}</div>
+      <div class="hidden-sm-and-down" style="height: 100px"></div>
+      <div style="width: 100%; padding: 2%" v-for="i in arr" :key="i.id">
+        <div>
+          <h1>{{ i.title }}</h1>
+        </div>
         <div
           class="text-truncate"
           style="word-wrap: break-word; text-align: left; max-width: 1200px"
@@ -40,69 +43,72 @@
         </div>
         <hr />
       </div>
-    </div>
-
-    <!-- insert -->
-    <div style="border-radius: 50px 50px; width: 100%">
-      <h1>เพิ่มบทความ</h1>
-      <div>
-        <div class="d-flex">
-          <div style="margin-top: 9px; margin-left: 5px">
-            <v-text-field
-              :rules="rules"
-              color="green"
-              label="ชื่อผู้เขียน"
-              type=""
-              v-model="seopost.addauthor"
-            ></v-text-field>
+      <!-- insert -->
+      <div style="border-radius: 50px 50px; width: 100%; padding: 2%">
+        <h1>เพิ่มบทความ</h1>
+        <div>
+          <div class="d-flex">
+            <div style="margin-top: 9px; margin-left: 5px">
+              <v-text-field
+                :rules="rules"
+                color="green"
+                label="ชื่อผู้เขียน"
+                type=""
+                v-model="seopost.addauthor"
+              ></v-text-field>
+            </div>
           </div>
-        </div>
-        <v-text-field
-          color="green"
-          label="หัวข้อบทความ"
-          v-model="seopost.addtitle"
-        ></v-text-field>
+          <v-text-field
+            color="green"
+            label="หัวข้อบทความ"
+            v-model="seopost.addtitle"
+          ></v-text-field>
 
-        <v-select
-          :items="types"
-          label="ประเภทบทความ"
-          v-model="seopost.addtype"
-        ></v-select>
-        <!-- <v-text-field
+          <v-select
+            :items="types"
+            label="ประเภทบทความ"
+            v-model="seopost.addtype"
+          ></v-select>
+          <!-- <v-text-field
           color="green"
           label="ประเภทบทความ"
           v-model="seopost.addtype"
         ></v-text-field> -->
 
-        <div class="d-flex">
-          <v-icon>mdi-camera</v-icon>
-          <div>
-            <input style="color: black" type="file" @change="onFileSelected" />
+          <div class="d-flex">
+            <v-icon>mdi-camera</v-icon>
+            <div>
+              <input
+                style="color: black"
+                type="file"
+                @change="onFileSelected"
+              />
+            </div>
           </div>
+
+          <div class="d-flex">
+            <img style="max-height: 300px" :src="imageURL" />
+          </div>
+
+          <v-textarea
+            color="green"
+            counter
+            label="เนื้อหา"
+            v-model="seopost.adddescription"
+          ></v-textarea>
+        </div>
+        <div>
+          <v-btn color="error" @click="adddiscard()"> ยกเลิก </v-btn>
+          <v-btn color="success" @click="addsave()"> บันทึก </v-btn>
         </div>
 
-        <div class="d-flex">
-          <img style="max-height: 300px" :src="imageURL" />
-        </div>
-
-        <v-textarea
-          color="green"
-          counter
-          label="เนื้อหา"
-          v-model="seopost.adddescription"
-        ></v-textarea>
+        <v-snackbar v-model="hasSaved" :timeout="2000" absolute bottom left>
+          ระบบได้ทำการบันทึกข้อมูลของท่านแล้ว
+        </v-snackbar>
+        <v-snackbar v-model="notSaved" :timeout="2000" absolute bottom left>
+          โปรดตรวจสอบข้อมูล
+        </v-snackbar>
       </div>
-      <div>
-        <v-btn color="error" @click="adddiscard()"> ยกเลิก </v-btn>
-        <v-btn color="success" @click="addsave()"> บันทึก </v-btn>
-      </div>
-
-      <v-snackbar v-model="hasSaved" :timeout="2000" absolute bottom left>
-        ระบบได้ทำการบันทึกข้อมูลของท่านแล้ว
-      </v-snackbar>
-      <v-snackbar v-model="notSaved" :timeout="2000" absolute bottom left>
-        โปรดตรวจสอบข้อมูล
-      </v-snackbar>
     </div>
 
     <!-- update -->

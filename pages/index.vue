@@ -1,8 +1,8 @@
 <template>
   <div class="d-flex justify-center flex-wrap" id="app">
-    <div class="d-flex justify-center" style="width: 100%">
+    <!-- <div class="d-flex justify-center" style="width: 100%">
       <AppBar />
-    </div>
+    </div> -->
     <div class="d-flex justify-center" style="width: 100%">
       <Home />
     </div>

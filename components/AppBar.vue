@@ -1,5 +1,5 @@
 <template>
-  <div style="width:100%">
+  <div style="width: 100%">
     <!-- Desktop -->
     <div class="hidden-sm-and-down">
       <div class="d-flex justify-center" style="width: 100%">
@@ -112,10 +112,12 @@
           </div>
           <!-- EndDialog -->
           <div class="d-flex align-center" style="height: 100px; width: 30%">
-            <img
-              style="max-width: 400px; width: 100%"
-              src="../assets/Webp/Appbar/logoufa.webp"
-            />
+            <NuxtLink to='/'>
+              <img
+                style="max-width: 400px; width: 100%"
+                src="../assets/Webp/Appbar/logoufa.webp"
+              />
+            </NuxtLink>
           </div>
           <div class="d-flex flex-wrap" style="width: 40%">
             <div
@@ -158,113 +160,113 @@
     <!-- Mobile -->
     <div class="hidden-md-and-up">
       <div class="d-flex justify-center" style="width: 100%">
-          <!-- Dialog -->
-          <div class="d-flex align-center" style="width: 5%">
-            <v-dialog transition="slide-x-transition">
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn
-                  dark
-                  color="red"
-                  v-bind="attrs"
-                  v-on="on"
-                  absolute
-                  fab
-                  icon
-                >
-                  <v-icon large>mdi-menu</v-icon>
-                </v-btn>
-              </template>
-
-              <v-card
-                style="
-                  max-width: 180px;
-                  border-radius: 0px 50px 50px 0px;
-                  position: fixed;
-                  left: 0;
-                  top: 0;
-                "
-                class="py-5"
+        <!-- Dialog -->
+        <div class="d-flex align-center" style="width: 5%">
+          <v-dialog transition="slide-x-transition">
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                dark
+                color="red"
+                v-bind="attrs"
+                v-on="on"
+                absolute
+                fab
+                icon
               >
-                <v-row
-                  class="justify-center"
-                  style="margin: 20px 0 0 0; margin-top: 15px"
+                <v-icon large>mdi-menu</v-icon>
+              </v-btn>
+            </template>
+
+            <v-card
+              style="
+                max-width: 180px;
+                border-radius: 0px 50px 50px 0px;
+                position: fixed;
+                left: 0;
+                top: 0;
+              "
+              class="py-5"
+            >
+              <v-row
+                class="justify-center"
+                style="margin: 20px 0 0 0; margin-top: 15px"
+              >
+                <a href="https://lin.ee/sQCIWhr" target="_BLANK">
+                  <div>
+                    <img
+                      width="90%"
+                      src="../assets/Webp/Appbar/linebunnyfix.webp"
+                    />
+                  </div>
+                </a>
+              </v-row>
+
+              <v-row class="justify-center">
+                <v-btn
+                  text
+                  style="margin: 20px 0 0 0; height: 120px !important"
+                  href=""
                 >
-                  <a href="https://lin.ee/sQCIWhr" target="_BLANK">
-                    <div>
-                      <img
-                        width="90%"
-                        src="../assets/Webp/Appbar/linebunnyfix.webp"
-                      />
-                    </div>
-                  </a>
-                </v-row>
+                  <div>
+                    <img
+                      class="mt-0"
+                      style="width: 100% !important"
+                      src="../assets/Webp/Appbar/promotion.webp"
+                    />
+                  </div>
+                </v-btn>
+              </v-row>
 
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                    href=""
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100% !important"
-                        src="../assets/Webp/Appbar/promotion.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
+              <v-row class="justify-center">
+                <v-btn
+                  text
+                  style="margin: 20px 0 0 0; height: 120px !important"
+                  href=""
+                >
+                  <div>
+                    <img
+                      class="mt-0"
+                      style="width: 100% !important"
+                      src="../assets/Webp/Appbar/activity.webp"
+                    />
+                  </div>
+                </v-btn>
+              </v-row>
 
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                    href=""
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100% !important"
-                        src="../assets/Webp/Appbar/activity.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
+              <v-row class="justify-center">
+                <v-btn
+                  text
+                  style="margin: 20px 0 0 0; height: 120px !important"
+                >
+                  <div>
+                    <img
+                      class="mt-0"
+                      style="width: 100% !important"
+                      src="../assets/Webp/Appbar/introduce.webp"
+                    />
+                  </div>
+                </v-btn>
+              </v-row>
 
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100% !important"
-                        src="../assets/Webp/Appbar/introduce.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
-
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                    to="/seotype"
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100% !important"
-                        src="../assets/Webp/Appbar/article.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
-              </v-card>
-            </v-dialog>
-          </div>
-          <!-- EndDialog -->
+              <v-row class="justify-center">
+                <v-btn
+                  text
+                  style="margin: 20px 0 0 0; height: 120px !important"
+                  to="/seotype"
+                >
+                  <div>
+                    <img
+                      class="mt-0"
+                      style="width: 100% !important"
+                      src="../assets/Webp/Appbar/article.webp"
+                    />
+                  </div>
+                </v-btn>
+              </v-row>
+            </v-card>
+          </v-dialog>
+        </div>
+        <!-- EndDialog -->
         <v-spacer></v-spacer>
         <div style="width: 60%; margin: 2.5%">
           <img
@@ -279,7 +281,7 @@
     <div id="loginbottombar" class="hidden-md-and-up">
       <div
         class="d-flex justify-center align-center"
-        style="width: 100%; height: 100%;padding: 0 12px;"
+        style="width: 100%; height: 100%; padding: 0 12px"
       >
         <v-btn
           style="background: transparent"
@@ -374,13 +376,13 @@ export default {
 }
 @media (min-width: 750px) {
   #loginbottombar {
-  background-color: black;
-  position: fixed;
-  bottom: 0px;
-  height: 140px;
-  width: 100%;
-  z-index: 1;
-}
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height: 140px;
+    width: 100%;
+    z-index: 1;
+  }
 }
 #ufaregis {
   margin: 0px 5px;

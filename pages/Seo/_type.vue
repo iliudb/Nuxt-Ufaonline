@@ -23,7 +23,7 @@
           <div style="font-size: 30px;">
             <!-- <a :href="'http://ufa-online.bet/Seopage/'+i.id" style="color: white"> -->
             <a
-              :href="'http://localhost:3000/Seopage?page=' + i.id"
+              :href="'http://localhost:3000/Seopage/' + i.id"
               style="color: white; text-decoration:none"
             >
               <!-- <a :href="'http://localhost:3000/Seopage?page=86'" style="color: white"> -->
