@@ -9,19 +9,14 @@
       </h1>
       <article class="d-flex justify-center flex-wrap">
         <div style="margin: 1%" v-for="i in seotype" :key="i.id">
-          <!-- :href="'http://ufa-online.bet/seo/'+i.value" -->
-          <!-- <a
-            style="width: 100%; text-decoration: none"
-            :href="'http://localhost:3000/seo?type=' + i.type"
-          > -->
-          <!-- <a
-            style="width: 100%; text-decoration: none"
-            :href="'http://localhost:3000/seo/' + i.type"
-          > -->
           <a
             style="width: 100%; text-decoration: none"
             :href="'http://ufa-online.bet/seo/' + i.type"
           >
+          <!-- <a
+            style="width: 100%; text-decoration: none"
+            :href="'http://localhost:3000/seo/' + i.type"
+          > -->
             <div class="d-flex justify-center align-center" id="seotype">
               <div style=""></div>
               <div

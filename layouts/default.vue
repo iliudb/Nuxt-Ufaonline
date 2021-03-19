@@ -1,6 +1,9 @@
 <template>
-  <v-app style="background:black; width:100%">
+  <v-app style="background: black; width: 100%">
     <div>
+      <div class="d-flex justify-center" style="width: 100%">
+        <AppBar />
+      </div>
       <nuxt />
     </div>
   </v-app>
