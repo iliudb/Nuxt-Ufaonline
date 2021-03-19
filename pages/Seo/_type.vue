@@ -22,7 +22,7 @@
         >
           <div style="font-size: 30px">
             <a
-              :href="'http://ufa-online.bet/Seopage/' + i.id"
+              :href="'https://ufa-online.bet/Seopage/' + i.id"
               style="color: white; text-decoration: none"
             >
               <!-- <a
@@ -59,7 +59,7 @@
                   >
                     <img
                       id="imgseo"
-                      :src="'http://image.oneslot.bet/' + i.img"
+                      :src="'https://image.oneslot.bet/' + i.img"
                     />
                   </div>
                 </div>

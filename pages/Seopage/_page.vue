@@ -16,7 +16,7 @@
         <div>
           <img
             style="max-width: 500px"
-            :src="'http://image.oneslot.bet/' + seoeditpost.seoimg"
+            :src="'https://image.oneslot.bet/' + seoeditpost.seoimg"
           />
         </div>
         <div

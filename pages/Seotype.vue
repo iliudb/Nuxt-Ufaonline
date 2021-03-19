@@ -11,7 +11,7 @@
         <div style="margin: 1%" v-for="i in seotype" :key="i.id">
           <a
             style="width: 100%; text-decoration: none"
-            :href="'http://ufa-online.bet/seo/' + i.type"
+            :href="'https://ufa-online.bet/seo/' + i.type"
           >
           <!-- <a
             style="width: 100%; text-decoration: none"
