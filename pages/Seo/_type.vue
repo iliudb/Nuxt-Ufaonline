@@ -20,13 +20,15 @@
           v-for="i in arr"
           :key="i.id"
         >
-          <div style="font-size: 30px;">
-            <!-- <a :href="'http://ufa-online.bet/Seopage/'+i.id" style="color: white"> -->
+          <div style="font-size: 30px">
             <a
+              :href="'http://ufa-online.bet/Seopage/' + i.id"
+              style="color: white; text-decoration: none"
+            >
+              <!-- <a
               :href="'http://localhost:3000/Seopage/' + i.id"
               style="color: white; text-decoration:none"
-            >
-              <!-- <a :href="'http://localhost:3000/Seopage?page=86'" style="color: white"> -->
+            > -->
               <div
                 class="text-truncate"
                 style="
@@ -296,8 +298,8 @@ export default {
         });
     },
     seopage(i) {
-      window.open(`http://localhost:3000/Seopage/${i.id}`);
-      // window.open(`http://ufa-online.bet/Seopage/${i.id}`);
+      // window.open(`http://localhost:3000/Seopage/${i.id}`);
+      window.open(`http://ufa-online.bet/Seopage/${i.id}`);
       // this.$router.push({ path: "Seopage", query: { page: i } });
     },
     adddiscard() {
