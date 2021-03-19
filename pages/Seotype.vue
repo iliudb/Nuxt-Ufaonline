@@ -14,9 +14,13 @@
             style="width: 100%; text-decoration: none"
             :href="'http://localhost:3000/seo?type=' + i.type"
           > -->
-          <a
+          <!-- <a
             style="width: 100%; text-decoration: none"
             :href="'http://localhost:3000/seo/' + i.type"
+          > -->
+          <a
+            style="width: 100%; text-decoration: none"
+            :href="'http://ufa-online.bet/seo/' + i.type"
           >
             <div class="d-flex justify-center align-center" id="seotype">
               <div style=""></div>
