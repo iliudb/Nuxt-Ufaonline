@@ -4,50 +4,78 @@
     style="color: white; width: 100%"
   >
     <div style="width: 100%; max-width: 2000px">
-      <h1 class="text-center" style="margin: 20px 0px; font-size: 50px">
-        บทความ
-      </h1>
-      <article class="d-flex justify-center flex-wrap">
-        <div style="margin: 1%" v-for="i in seotype" :key="i.id">
-          <a
+      <!-- Desktop -->
+      <div class="hidden-sm-and-down">
+        <div style="height:100px" class="hidden-sm-and-down"></div>
+        <h1 class="text-center" style="margin: 20px 0px; font-size: 70px">
+          บทความ
+        </h1>
+        <section class="d-flex justify-center flex-wrap">
+          <div style="width: auto; margin: 1%" v-for="i in seotype" :key="i.id">
+            <!-- <a
             style="width: 100%; text-decoration: none"
             :href="'https://ufa-online.bet/seo/' + i.type"
-          >
-          <!-- <a
-            style="width: 100%; text-decoration: none"
-            :href="'http://localhost:3000/seo/' + i.type"
           > -->
-            <div class="d-flex justify-center align-center" id="seotype">
-              <div style=""></div>
+            <NuxtLink style="text-decoration: none" :to="'/seo/' + i.type">
               <div
-                class="d-flex justify-center align-center"
-                style="
-                  height: 100%;
-                  width: 100%;
-                  position: relative;
-                  top: 0;
-                  overflow: hidden;
-                "
+                class="d-flex justify-center align-center flex-wrap"
+                id="seotype"
               >
                 <div
                   class="d-flex justify-center align-center"
-                  style="
-                    height: 100%;
-                    width: 100%;
-                    position: absolute;
-                    overflow: hidden;
-                  "
+                  style="height: 300px; width: 100%; overflow: hidden"
                 >
                   <img style="height: 100%" :src="i.img" />
                 </div>
-                <div class="text-center" id="seotypetxt">
+                <div
+                  class="d-flex justify-center align-center text-center"
+                  id="seotypetxt"
+                >
                   <strong>{{ i.value }}</strong>
                 </div>
               </div>
-            </div>
-          </a>
-        </div>
-      </article>
+            </NuxtLink>
+          </div>
+        </section>
+      </div>
+
+      <!-- Mobile -->
+      <div class="hidden-md-and-up">
+        <h1 class="text-center" style="margin: 20px 0px; font-size: 40px">
+          บทความ
+        </h1>
+        <section style="margin: 1%" class="d-flex justify-center flex-wrap">
+          <div style="width: 46%; margin: 2%" v-for="i in seotype" :key="i.id">
+            <!-- <a
+            style="width: 100%; text-decoration: none"
+            :href="'https://ufa-online.bet/seo/' + i.type"
+          > -->
+            <NuxtLink
+              style="text-decoration: none"
+              :to="'/seo/' + i.type"
+            >
+              <div
+                class="d-flex justify-center align-center flex-wrap"
+                id="mbseotype"
+              >
+                <div
+                  class="d-flex justify-center align-center"
+                  style="height: 250px; width: 100%; overflow: hidden"
+                >
+                  <img style="height: 100%" :src="i.img" />
+                </div>
+                <div
+                  class="d-flex justify-center align-center text-center"
+                  id="mbseotypetxt"
+                >
+                  <strong>{{ i.value }}</strong>
+                </div>
+              </div>
+            </NuxtLink>
+          </div>
+        </section>
+        <div style="height: 100px" class="hidden-md-and-up"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -83,25 +111,27 @@ export default {
 
 <style lang="scss" scoped>
 #seotype {
-  width: 250px;
-  height: 250px;
-  background: white;
-  #seotypetxt {
-    position: relative;
-    color: black;
-    font-size: 25px;
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    padding: 42.5% 0px;
-    z-index: -1;
-  }
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
 }
-#seotype:hover {
-  #seotypetxt {
-    background: white;
-    opacity: 0.8;
-    z-index: 1;
-  }
+#seotypetxt {
+  color: black;
+  font-size: 30px;
+  background: red;
+  width: 100%;
+  height: 50px;
+}
+#mbseotype {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+#mbseotypetxt {
+  color: black;
+  font-size: 20px;
+  background: red;
+  width: 100%;
+  height: 50px;
 }
 </style>

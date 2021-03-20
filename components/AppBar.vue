@@ -4,115 +4,11 @@
     <div class="hidden-sm-and-down">
       <div class="d-flex justify-center" style="width: 100%">
         <div class="d-flex align-center" id="ufabar">
-          <!-- Dialog -->
-          <div class="d-flex align-center" style="width: 5%">
-            <v-dialog transition="slide-x-transition">
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn
-                  dark
-                  color="red"
-                  v-bind="attrs"
-                  v-on="on"
-                  absolute
-                  fab
-                  icon
-                >
-                  <v-icon large>mdi-menu</v-icon>
-                </v-btn>
-              </template>
-
-              <v-card
-                style="
-                  max-width: 180px;
-                  border-radius: 0px 50px 50px 0px;
-                  position: fixed;
-                  left: 0;
-                  top: 0;
-                "
-                class="py-5"
-              >
-                <v-row
-                  class="justify-center"
-                  style="margin: 20px 0 0 0; margin-top: 15px"
-                >
-                  <a href="https://lin.ee/sQCIWhr" target="_BLANK">
-                    <div>
-                      <img
-                        width="90%"
-                        src="../assets/Webp/Appbar/linebunnyfix.webp"
-                      />
-                    </div>
-                  </a>
-                </v-row>
-
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                    href=""
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100% !important"
-                        src="../assets/Webp/Appbar/promotion.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
-
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                    href=""
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100% !important"
-                        src="../assets/Webp/Appbar/activity.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
-
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100% !important"
-                        src="../assets/Webp/Appbar/introduce.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
-
-                <v-row class="justify-center">
-                  <v-btn
-                    text
-                    style="margin: 20px 0 0 0; height: 120px !important"
-                    to="/seotype"
-                  >
-                    <div>
-                      <img
-                        class="mt-0"
-                        style="width: 100% !important"
-                        src="../assets/Webp/Appbar/article.webp"
-                      />
-                    </div>
-                  </v-btn>
-                </v-row>
-              </v-card>
-            </v-dialog>
-          </div>
-          <!-- EndDialog -->
-          <div class="d-flex align-center" style="height: 100px; width: 30%">
-            <NuxtLink to='/'>
+          <div
+            class="d-flex align-center"
+            style="height: 100px; width: 30%; padding-left: 1%"
+          >
+            <NuxtLink to="/">
               <img
                 style="max-width: 400px; width: 100%"
                 src="../assets/Webp/Appbar/logoufa.webp"
@@ -127,9 +23,9 @@
               :key="i.id"
             >
               <div style="width: 100%">
-                <a @click="article(i.path)"
+                <NuxtLink :to="'/' + i.path"
                   ><img style="width: 100%" :src="i.src"
-                /></a>
+                /></NuxtLink>
               </div>
             </div>
           </div>
@@ -163,35 +59,28 @@
     <div class="hidden-md-and-up">
       <div class="d-flex justify-center" style="width: 100%">
         <!-- Dialog -->
-        <div class="d-flex align-center" style="width: 5%">
+        <div class="d-flex justify-center align-center" style="width: 10%">
           <v-dialog transition="slide-x-transition">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn
-                dark
-                color="red"
-                v-bind="attrs"
-                v-on="on"
-                absolute
-                fab
-                icon
-              >
+              <v-btn color="red" v-bind="attrs" v-on="on" absolute fab icon>
                 <v-icon large>mdi-menu</v-icon>
               </v-btn>
             </template>
 
             <v-card
               style="
+                height: auto;
+                padding:10px 0px 30px 0px;
                 max-width: 180px;
-                border-radius: 0px 50px 50px 0px;
+                border-radius: 0px 30px 30px 0px;
                 position: fixed;
                 left: 0;
                 top: 0;
               "
-              class="py-5"
             >
               <v-row
                 class="justify-center"
-                style="margin: 20px 0 0 0; margin-top: 15px"
+                style="margin: 0px; margin-top: 15px"
               >
                 <a href="https://lin.ee/sQCIWhr" target="_BLANK">
                   <div>
@@ -206,7 +95,7 @@
               <v-row class="justify-center">
                 <v-btn
                   text
-                  style="margin: 20px 0 0 0; height: 120px !important"
+                  style="margin: 0px; height: 120px !important"
                   href=""
                 >
                   <div>
@@ -222,7 +111,7 @@
               <v-row class="justify-center">
                 <v-btn
                   text
-                  style="margin: 20px 0 0 0; height: 120px !important"
+                  style="margin: 0px; height: 120px !important"
                   href=""
                 >
                   <div>
@@ -236,10 +125,7 @@
               </v-row>
 
               <v-row class="justify-center">
-                <v-btn
-                  text
-                  style="margin: 20px 0 0 0; height: 120px !important"
-                >
+                <v-btn text style="margin: 0px; height: 120px !important">
                   <div>
                     <img
                       class="mt-0"
@@ -253,7 +139,7 @@
               <v-row class="justify-center">
                 <v-btn
                   text
-                  style="margin: 20px 0 0 0; height: 120px !important"
+                  style="margin: 0px; height: 120px !important"
                   to="/seotype"
                 >
                   <div>
@@ -269,14 +155,12 @@
           </v-dialog>
         </div>
         <!-- EndDialog -->
-        <v-spacer></v-spacer>
-        <div style="width: 60%; margin: 2.5%">
+        <div style="width: 80%; margin: 2.5%">
           <img
             style="width: 100%"
             src="../assets/Webp/Newufabet/ufalogo.webp"
           />
         </div>
-        <v-spacer></v-spacer>
       </div>
     </div>
 
@@ -290,7 +174,7 @@
           height="100%"
           width="20%"
           class="align-end pa-0 align-center"
-          href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login" 
+          href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
           target="_BLANK"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-01.webp"
         /></v-btn>
@@ -356,7 +240,7 @@ export default {
         {
           id: 4,
           src: require("../assets/Webp/Appbar/article.webp"),
-          path: "seo",
+          path: "seotype",
         },
       ],
     };

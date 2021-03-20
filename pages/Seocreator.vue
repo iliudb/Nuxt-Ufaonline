@@ -5,13 +5,79 @@
   >
     <div style="width: 100%; max-width: 2000px">
       <div class="hidden-sm-and-down" style="height: 100px"></div>
-      <div style="width: 100%; padding: 2%" v-for="i in arr" :key="i.id">
-        <div>
+      <div style="width: 100%; padding: 0 2%" v-for="i in arr" :key="i.id">
+        <div
+          class="d-flex"
+          style="width: 100%; background: white; height: 100px; color: black"
+        >
+          <div
+            class="d-flex justify-center align-center"
+            style="background: transparent; width: 10%"
+          >
+            <div>
+              {{ i.title }}
+            </div>
+          </div>
+          <div
+            class="d-flex justify-center align-center"
+            style="background: transparent; width: 10%"
+          >
+            <div>
+              {{ i.type }}
+            </div>
+          </div>
+          <div
+            class="d-flex justify-start align-center"
+            style="background: transparent; width: 35%"
+          >
+            <div>{{ i.description }}</div>
+          </div>
+          <div
+            class="d-flex justify-center align-center"
+            style="background: transparent; width: 15%"
+          >
+            <div style="height: 100%">
+              <a @click="seoimgfu('http://image.oneslot.bet/' + i.img)">
+                <img
+                  style="height: 100%"
+                  :src="'http://image.oneslot.bet/' + i.img"
+              /></a>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-center align-center"
+            style="background: transparent; width: 15%"
+          >
+            <div>
+              {{ i.author }}
+            </div>
+          </div>
+          <div
+            class="d-flex justify-center align-center"
+            style="background: transparent; width: 20%"
+          >
+            <div>
+              <v-btn
+                fab
+                icon
+                @click="seoselecteone(i.id), (updatedialog = true)"
+              >
+                <v-icon color="black"> mdi-file-document-edit-outline </v-icon>
+              </v-btn>
+              <v-btn fab icon @click="seodelete(i.id)">
+                <v-icon color="black"> mdi-close-circle </v-icon>
+              </v-btn>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div class="text-center">
           <h1>{{ i.title }}</h1>
+          <h2>{{ i.type }}</h2>
         </div>
         <div
           class="text-truncate"
-          style="word-wrap: break-word; text-align: left; max-width: 1200px"
+          style="word-wrap: break-word; text-align: left; text-indent:20px max-width: 1200px"
         >
           {{ i.description }}
         </div>
@@ -41,8 +107,9 @@
             </div>
           </div>
         </div>
-        <hr />
+        <hr /> -->
       </div>
+      
       <!-- insert -->
       <div style="border-radius: 50px 50px; width: 100%; padding: 2%">
         <h1>เพิ่มบทความ</h1>
@@ -109,6 +176,7 @@
           โปรดตรวจสอบข้อมูล
         </v-snackbar>
       </div>
+      <div style="height: 100px" class="hidden-md-and-up"></div>
     </div>
 
     <!-- update -->
@@ -413,13 +481,5 @@ export default {
 <style lang="scss">
 .v-dialog {
   box-shadow: 0px 0px 0px 0px;
-}
-#imgseo {
-  height: 100%;
-  opacity: 0.5;
-}
-#imgseo:hover {
-  height: 100%;
-  opacity: 1;
 }
 </style>
