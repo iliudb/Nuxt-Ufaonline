@@ -11,16 +11,16 @@
           style="width: 100%; background: white; height: 100px; color: black"
         >
           <div
-            class="d-flex justify-center align-center"
-            style="background: transparent; width: 10%"
+            class="d-flex justify-start align-center"
+            style="background: transparent; width: 10%; padding: 1%"
           >
             <div>
               {{ i.title }}
             </div>
           </div>
           <div
-            class="d-flex justify-center align-center"
-            style="background: transparent; width: 10%"
+            class="d-flex justify-start align-center"
+            style="background: transparent; width: 10%; padding: 1%"
           >
             <div>
               {{ i.type }}
@@ -28,7 +28,7 @@
           </div>
           <div
             class="d-flex justify-start align-center"
-            style="background: transparent; width: 35%"
+            style="background: transparent; width: 35%; padding: 1%"
           >
             <div>{{ i.description }}</div>
           </div>
@@ -70,7 +70,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- <div class="text-center">
           <h1>{{ i.title }}</h1>
           <h2>{{ i.type }}</h2>
@@ -109,7 +109,7 @@
         </div>
         <hr /> -->
       </div>
-      
+
       <!-- insert -->
       <div style="border-radius: 50px 50px; width: 100%; padding: 2%">
         <h1>เพิ่มบทความ</h1>

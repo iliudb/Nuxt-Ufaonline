@@ -1,25 +1,31 @@
 <template>
-  <div class="d-flex justify-center" style="width: 100%">
+  <div class="d-flex justify-center flex-wrap" style="width: 100%">
     <!-- <div>seopage {{ page }}</div> -->
     <!-- <div>{{ page.id }}</div> -->
-    <div class="hidden-sm-and-down" style="height: 100px"></div>
+    <div class="hidden-sm-and-down" style="height: 100px; width: 100%"></div>
     <div
       style="width: 100%; max-width: 2000px"
       class="d-flex justify-center flex-wrap"
     >
-      <section class="d-flex justify-center flex-wrap">
-        <div class="d-flex justify-center" style="font-size: 50px; width: 100%">
-          <div>
-            <strong> {{ seoeditpost.title }} </strong>
-          </div>
+      <section style="width: 100%" class="d-flex justify-center flex-wrap">
+        <div style="width: 100%" class="d-flex justify-center">
+          <h1
+            class="text-center"
+            style="font-size: 50px; width: 100%; color: white"
+          >
+            {{ seoeditpost.title }}
+          </h1>
         </div>
-        <div>
+        <div
+          style="width: 100%; max-width: 500px"
+          class="d-flex justify-center"
+        >
           <img
-            style="max-width: 500px"
+            style="width: 100%"
             :src="'https://image.oneslot.bet/' + seoeditpost.seoimg"
           />
         </div>
-        <div
+        <p
           style="
             font-size: 20px;
             width: 100%;
@@ -29,7 +35,7 @@
           "
         >
           {{ seoeditpost.description }}
-        </div>
+        </p>
         <div>By : {{ seoeditpost.author }}</div>
       </section>
     </div>
@@ -60,7 +66,7 @@ export default {
       await this.$axios
         .$get(`/articleone/${id}`)
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           this.seoeditpost.id = res.id;
           this.seoeditpost.title = res.title;
           this.seoeditpost.description = res.description;
