@@ -9,7 +9,7 @@
           style="width: 100%; display: flex; flex-direction: column;"
         >
           <img style="width: 100%" src="../assets/Webp/Asd/bg.webp" />
-          <div class="pro100" style="max-width:30%;position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div>
+          <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div>
           <div
             class="backgroundBT marginBT"
             style="
@@ -65,7 +65,7 @@
           style="width: 100%; display: flex; flex-direction: column;"
         >
           <div class="BTimg"></div>
-          <div class="pro100" style="max-width:30%;position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div>
+          <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div>
           <div
             class="backgroundBT marginBT"
             style="
@@ -157,19 +157,66 @@ img {
   height: auto;
 }
 .pro100{
-  margin-top: 0%;
+  margin-top: 5%;
+  width: 60%;
 }
-@media (max-width: 400px) {
+// @media (max-width: 400px) {
+//   .pro100 {
+//     margin-top: 5%;
+//   }
+// }
+// @media (max-width: 650px) {
+//   .pro100 {
+//     margin-top: -3%;
+//   }
+// }
+
+@media (min-width: 500px) {
   .pro100 {
+    width: 40%;
+    margin-top: 3%;
+  }
+}
+@media (min-width: 800px) {
+  .pro100 {
+    width: 50%;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 1000px) {
+  .pro100 {
+    width: 40%;
+    margin-top: 8%;
+  }
+}
+@media (min-width: 1900px) {
+  .pro100 {
+    width: 50%;
+    margin-top: 8%;
+  }
+}
+@media (min-width: 2000px) {
+  .pro100 {
+    width: 30%;
     margin-top: 5%;
   }
 }
 .marginBT {
   margin-top: 25%;
 }
+@media (min-width: 500px) {
+  .marginBT {
+    margin-top: 16%;
+  }
+}
+@media (min-width: 700px) {
+  .marginBT {
+    margin-top: 22%;
+  }
+}
 @media (min-width: 1000px) {
   .marginBT {
-    margin-top: 18%;
+    margin-top: 22%;
   }
 }
 @media (min-width: 1500px) {
