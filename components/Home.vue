@@ -9,6 +9,7 @@
           style="width: 100%; display: flex; flex-direction: column;"
         >
           <img style="width: 100%" src="../assets/Webp/Asd/bg.webp" />
+          <div class="pro100" style="max-width:30%;position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div>
           <div
             class="backgroundBT marginBT"
             style="
@@ -64,6 +65,7 @@
           style="width: 100%; display: flex; flex-direction: column;"
         >
           <div class="BTimg"></div>
+          <div class="pro100" style="max-width:30%;position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div>
           <div
             class="backgroundBT marginBT"
             style="
@@ -153,6 +155,14 @@ export default {
 img {
   max-width: 100%;
   height: auto;
+}
+.pro100{
+  margin-top: 0%;
+}
+@media (max-width: 400px) {
+  .pro100 {
+    margin-top: 5%;
+  }
 }
 .marginBT {
   margin-top: 25%;
