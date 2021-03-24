@@ -173,8 +173,8 @@ img {
 
 @media (min-width: 500px) {
   .pro100 {
-    width: 40%;
-    margin-top: 3%;
+    width: 50%;
+    margin-top: 0%;
   }
 }
 @media (min-width: 800px) {
@@ -185,14 +185,14 @@ img {
 }
 @media (min-width: 1000px) {
   .pro100 {
-    width: 40%;
-    margin-top: 8%;
+    width: 55%;
+    margin-top: 4%;
   }
 }
 @media (min-width: 1900px) {
   .pro100 {
-    width: 50%;
-    margin-top: 8%;
+    width: 60%;
+    margin-top: 5%;
   }
 }
 @media (min-width: 2000px) {
