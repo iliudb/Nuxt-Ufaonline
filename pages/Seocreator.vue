@@ -482,4 +482,8 @@ export default {
 .v-dialog {
   box-shadow: 0px 0px 0px 0px;
 }
+.v-application .primary--text{
+  color: #4CAF50 !important;
+  caret-color: #4CAF50 !important;
+}
 </style>

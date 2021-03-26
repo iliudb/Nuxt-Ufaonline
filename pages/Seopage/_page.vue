@@ -3,6 +3,7 @@
     <!-- <div>seopage {{ page }}</div> -->
     <!-- <div>{{ page.id }}</div> -->
     <div class="hidden-sm-and-down" style="height: 100px; width: 100%"></div>
+
     <div
       style="width: 100%; max-width: 2000px"
       class="d-flex justify-center flex-wrap"
@@ -38,6 +39,7 @@
         </p>
         <div>By : {{ seoeditpost.author }}</div>
       </section>
+      <div style="height: 50px; width:100%;"></div>
     </div>
   </div>
 </template>
