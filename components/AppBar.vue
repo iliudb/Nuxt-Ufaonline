@@ -33,7 +33,6 @@
             <a
               style="color: white"
               href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
-              target="_BLANK"
             >
               <div
                 class="d-flex justify-center align-center"
@@ -43,7 +42,6 @@
             <a
               style="color: white"
               href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
-              target="_BLANK"
             >
               <div
                 class="d-flex justify-center align-center"
@@ -157,7 +155,7 @@
         <!-- EndDialog -->
         <div style="width: 80%; margin: 2.5%">
           <img
-            style="width: 100%"
+            style="width: 85%"
             src="../assets/Webp/Newufabet/ufalogo.webp"
           />
         </div>
@@ -175,7 +173,6 @@
           width="20%"
           class="align-end pa-0 align-center"
           href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
-          target="_BLANK"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-01.webp"
         /></v-btn>
         <v-btn
@@ -184,7 +181,6 @@
           width="20%"
           class="align-end pa-0 align-center"
           href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
-          target="_BLANK"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-02.webp"
         /></v-btn>
         <v-btn
