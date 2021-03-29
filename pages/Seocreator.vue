@@ -3,9 +3,9 @@
     class="d-flex justify-center flex-wrap"
     style="color: white; width: 100%"
   >
-    <div style="width: 100%; max-width: 2000px">
+    <section style="width: 100%; max-width: 2000px">
       <div class="hidden-sm-and-down" style="height: 100px"></div>
-      <div style="width: 100%; padding: 0 2%" v-for="i in arr" :key="i.id">
+      <article style="width: 100%; padding: 0 2%" v-for="i in arr" :key="i.id">
         <div
           class="d-flex"
           style="width: 100%; background: white; height: 100px; color: black"
@@ -14,23 +14,19 @@
             class="d-flex justify-start align-center"
             style="background: transparent; width: 10%; padding: 1%"
           >
-            <div>
-              {{ i.title }}
-            </div>
+            {{ i.title }}
           </div>
           <div
             class="d-flex justify-start align-center"
             style="background: transparent; width: 10%; padding: 1%"
           >
-            <div>
-              {{ i.type }}
-            </div>
+            {{ i.type }}
           </div>
           <div
             class="d-flex justify-start align-center"
             style="background: transparent; width: 35%; padding: 1%"
           >
-            <div>{{ i.description }}</div>
+            {{ i.description }}
           </div>
           <div
             class="d-flex justify-center align-center"
@@ -48,9 +44,7 @@
             class="d-flex justify-center align-center"
             style="background: transparent; width: 15%"
           >
-            <div>
-              {{ i.author }}
-            </div>
+            {{ i.author }}
           </div>
           <div
             class="d-flex justify-center align-center"
@@ -70,45 +64,7 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="text-center">
-          <h1>{{ i.title }}</h1>
-          <h2>{{ i.type }}</h2>
-        </div>
-        <div
-          class="text-truncate"
-          style="word-wrap: break-word; text-align: left; text-indent:20px max-width: 1200px"
-        >
-          {{ i.description }}
-        </div>
-
-        <div>
-          <a @click="seoimgfu('http://image.oneslot.bet/' + i.img)">
-            <img
-              style="max-width: 300px"
-              :src="'http://image.oneslot.bet/' + i.img"
-          /></a>
-        </div>
-
-        <div>
-          <div class="d-flex">
-            <div style="word-wrap: break-word; text-align: left">
-              ผู้เขียน : {{ i.author }}
-            </div>
-
-            <v-spacer></v-spacer>
-            <div>
-              <v-btn icon @click="seoselecteone(i.id), (updatedialog = true)">
-                <v-icon> mdi-file-document-edit-outline </v-icon>
-              </v-btn>
-              <v-btn class="mr-5" icon @click="seodelete(i.id)">
-                <v-icon> mdi-close-circle </v-icon>
-              </v-btn>
-            </div>
-          </div>
-        </div>
-        <hr /> -->
-      </div>
+      </article>
 
       <!-- insert -->
       <div style="border-radius: 50px 50px; width: 100%; padding: 2%">
@@ -177,7 +133,7 @@
         </v-snackbar>
       </div>
       <div style="height: 100px" class="hidden-md-and-up"></div>
-    </div>
+    </section>
 
     <!-- update -->
     <v-dialog
@@ -481,9 +437,5 @@ export default {
 <style lang="scss">
 .v-dialog {
   box-shadow: 0px 0px 0px 0px;
-}
-.v-application .primary--text{
-  color: #4CAF50 !important;
-  caret-color: #4CAF50 !important;
 }
 </style>
