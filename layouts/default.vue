@@ -38,8 +38,5 @@ export default {
 </script>
 
 <style lang="scss">
-.v-application .primary--text {
-  color: #4caf50 !important;
-  caret-color: #4caf50 !important;
-}
+
 </style>

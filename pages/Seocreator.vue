@@ -26,7 +26,9 @@
             class="d-flex justify-start align-center"
             style="background: transparent; width: 35%; padding: 1%"
           >
-            {{ i.description }}
+            <div class="text-truncate" style="max-width: 400px">
+              {{ i.description }}
+            </div>
           </div>
           <div
             class="d-flex justify-center align-center"
@@ -88,6 +90,7 @@
           ></v-text-field>
 
           <v-select
+            color="green"
             :items="types"
             label="ประเภทบทความ"
             v-model="seopost.addtype"
@@ -114,6 +117,7 @@
           </div>
 
           <v-textarea
+            auto-grow
             color="green"
             counter
             label="เนื้อหา"
@@ -158,6 +162,7 @@
           ></v-text-field>
 
           <v-select
+            color="green"
             :items="types"
             label="ประเภทบทความ"
             v-model="seoeditpost.type"
@@ -438,4 +443,8 @@ export default {
 .v-dialog {
   box-shadow: 0px 0px 0px 0px;
 }
+// .v-application .primary--text {
+//   color: #4caf50 !important;
+//   caret-color: #4caf50 !important;
+// }
 </style>
