@@ -18,6 +18,21 @@
     <div class="d-flex justify-center" style="width: 100%">
       <Aboutus />
     </div>
+
+    <!-- <div v-for="i in cards" :key="i.id">
+      <h1 v-html="i.title"></h1>
+    </div> -->
+
+    <!-- <h1 v-html="test"></h1> -->
+
+    <!-- {{cards.title}} -->
+
+    <section hidden>
+      <article v-for="i in arr" :key="i.id">
+        <strong>{{ i.title }}</strong>
+        <p>{{ i.description }}</p>
+      </article>
+    </section>
     <!-- <div
       id="seoa"
       class="d-flex"
@@ -59,13 +74,35 @@ export default {
     return {
       seopass: "",
       seocf: "gkp",
+      arr: "",
+      test: "Welcome to <br/> Arrow GTP",
+      cards: [
+        {
+          title: "Welcome to <br/> Arrow GTP",
+        },
+      ],
     };
   },
   components: {
     Logo,
     VuetifyLogo,
   },
+  mounted() {
+    this.seoselecte();
+  },
   methods: {
+    async seoselecte() {
+      await this.$axios
+        .$get(`/article`)
+        .then((res) => {
+          // console.log("data", res);
+          this.arr = res;
+          //   console.log("arr", this.arr);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    },
     seocondis() {
       if (this.seopass == this.seocf) {
         if (this.$store.getters.gseocon == false) {
