@@ -61,6 +61,7 @@
                     >
                       {{ i.title }}
                     </strong>
+                    <p hidden>{{i.description}}</p>
                   </div>
                 </div>
               </NuxtLink>
