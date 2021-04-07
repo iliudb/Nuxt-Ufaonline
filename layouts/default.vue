@@ -5,6 +5,7 @@
         <AppBar />
       </div>
       <nuxt />
+      
     </div>
   </v-app>
 </template>
