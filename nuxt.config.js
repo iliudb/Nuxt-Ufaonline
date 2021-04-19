@@ -10,7 +10,7 @@ export default {
   },
 
   axios: {
-    baseURL: "https://apiarticle.oneslot.bet/" // Used as fallback if no runtime config is provided
+    baseURL: "https://apiarticle.warpufa.bet/" // Used as fallback if no runtime config is provided
   },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,

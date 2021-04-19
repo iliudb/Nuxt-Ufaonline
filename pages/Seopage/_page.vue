@@ -23,7 +23,7 @@
         >
           <img
             style="width: 100%"
-            :src="'https://image.oneslot.bet/' + seoeditpost.seoimg"
+            :src="'https://image.warpufa.bet/' + seoeditpost.seoimg"
           />
         </div>
         <p
@@ -32,10 +32,10 @@
             width: 100%;
             padding: 0px 5%;
             text-indent: 50px;
-            text-align: justify;
+            white-space: pre-line;
           "
+          v-html="seoeditpost.description"
         >
-          {{ seoeditpost.description }}
         </p>
         <div>By : {{ seoeditpost.author }}</div>
       </section>

@@ -37,7 +37,7 @@
                   >
                     <img
                       id="imgseo"
-                      :src="'https://image.oneslot.bet/' + i.img"
+                      :src="'https://image.warpufa.bet/' + i.img"
                     />
                   </div>
                   <div
@@ -103,7 +103,7 @@
                 >
                   <img
                     style="height: 100%"
-                    :src="'https://image.oneslot.bet/' + i.img"
+                    :src="'https://image.warpufa.bet/' + i.img"
                   />
                 </div>
                 <div
