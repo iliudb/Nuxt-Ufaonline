@@ -22,10 +22,17 @@
               v-for="i in appbar"
               :key="i.id"
             >
-              <div style="width: 100%">
-                <NuxtLink :to="'/' + i.path"
-                  ><img style="width: 100%" :src="i.src"
-                /></NuxtLink>
+              <div
+                class="d-flex justify-center align-center"
+                style="width: 100%"
+              >
+                <NuxtLink
+                  style="text-decoration: none; color: white; font-size: 30px"
+                  :to="'/' + i.path"
+                >
+                  {{ i.value }}
+                  <!-- <img style="width: 100%" :src="i.src"/> -->
+                </NuxtLink>
               </div>
             </div>
           </div>
@@ -68,7 +75,7 @@
             <v-card
               style="
                 height: auto;
-                padding:10px 0px 30px 0px;
+                padding: 10px 0px 30px 0px;
                 max-width: 180px;
                 border-radius: 0px 30px 30px 0px;
                 position: fixed;
@@ -90,74 +97,32 @@
                 </a>
               </v-row>
 
-              <v-row class="justify-center">
-                <v-btn
-                  text
-                  style="margin: 0px; height: 120px !important"
-                  href=""
-                >
-                  <div>
-                    <img
+              <v-row v-for="i in appbar" :key="i.id" class="justify-center">
+                <Nuxt-link style="text-decoration: none" :to="'/' + i.path">
+                  <v-btn
+                    text
+                    style="margin: 0px; height: 120px !important"
+                    href=""
+                  >
+                    <div style="font-size: 25px">
+                      {{ i.value }}
+                      <!-- <img
                       class="mt-0"
                       style="width: 100% !important"
                       src="../assets/Webp/Appbar/promotion.webp"
-                    />
-                  </div>
-                </v-btn>
-              </v-row>
-
-              <v-row class="justify-center">
-                <v-btn
-                  text
-                  style="margin: 0px; height: 120px !important"
-                  href=""
+                    /> -->
+                    </div>
+                  </v-btn></Nuxt-link
                 >
-                  <div>
-                    <img
-                      class="mt-0"
-                      style="width: 100% !important"
-                      src="../assets/Webp/Appbar/activity.webp"
-                    />
-                  </div>
-                </v-btn>
-              </v-row>
-
-              <v-row class="justify-center">
-                <v-btn text style="margin: 0px; height: 120px !important">
-                  <div>
-                    <img
-                      class="mt-0"
-                      style="width: 100% !important"
-                      src="../assets/Webp/Appbar/introduce.webp"
-                    />
-                  </div>
-                </v-btn>
-              </v-row>
-
-              <v-row class="justify-center">
-                <v-btn
-                  text
-                  style="margin: 0px; height: 120px !important"
-                  to="/seotype"
-                >
-                  <div>
-                    <img
-                      class="mt-0"
-                      style="width: 100% !important"
-                      src="../assets/Webp/Appbar/article.webp"
-                    />
-                  </div>
-                </v-btn>
               </v-row>
             </v-card>
           </v-dialog>
         </div>
         <!-- EndDialog -->
         <div style="width: 80%; margin: 2.5%">
-          <img
-            style="width: 85%"
-            src="../assets/Webp/Newufabet/ufalogo.webp"
-          />
+          <Nuxt-link to="/">
+            <img style="width: 85%" src="../assets/Webp/Newufabet/ufalogo.webp"
+          /></Nuxt-link>
         </div>
       </div>
     </div>
@@ -230,23 +195,29 @@ export default {
   data: () => {
     return {
       appbar: [
-        { id: 1, src: require("../assets/Webp/Appbar/promotion.webp") },
-        { id: 2, src: require("../assets/Webp/Appbar/activity.webp") },
-        { id: 3, src: require("../assets/Webp/Appbar/introduce.webp") },
+        {
+          id: 1,
+          value: "โปรโมชั่น",
+          src: require("../assets/Webp/Appbar/promotion.webp"),
+        },
+        {
+          id: 2,
+          value: "กิจกรรรม",
+          src: require("../assets/Webp/Appbar/activity.webp"),
+        },
+        {
+          id: 3,
+          value: "แนะนำ",
+          src: require("../assets/Webp/Appbar/introduce.webp"),
+        },
         {
           id: 4,
+          value: "บทความ",
           src: require("../assets/Webp/Appbar/article.webp"),
           path: "seotype",
         },
       ],
     };
-  },
-  methods: {
-    article(path) {
-      if (path == "seo") {
-        this.$router.push({ path: "seotype" });
-      }
-    },
   },
 };
 </script>
@@ -256,18 +227,17 @@ export default {
   background-color: black;
   position: fixed;
   bottom: 0px;
-  height: 100px;
+  height: 80px;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 @media (min-width: 750px) {
   #loginbottombar {
     background-color: black;
     position: fixed;
     bottom: 0px;
-    height: 140px;
+    height: 80px;
     width: 100%;
-    z-index: 1;
   }
 }
 #ufaregis {
@@ -513,11 +483,11 @@ export default {
 #navimg101 {
   max-height: 60px;
   @media (min-width: 290px) {
-    max-height: 85px;
+    max-height: 80px;
     height: 100%;
   }
   @media (min-width: 750px) {
-    max-height: 100px;
+    max-height: 80px;
     height: 100%;
   }
 }
@@ -535,7 +505,7 @@ export default {
     max-height: 80px;
   }
   @media (min-width: 750px) {
-    max-height: 120px;
+    max-height: 80px;
   }
 }
 #navimg22 {
