@@ -8,8 +8,8 @@
           class="align-center"
           style="width: 100%; display: flex; flex-direction: column;"
         >
-          <img style="width: 100%" src="../assets/Webp/Asd/bg.webp" />
-          <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div>
+          <img style="width: 100%" src="../assets/Webp/Asd/pcbg.webp" />
+          <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
           <div
             class="backgroundBT marginBT"
             style="
@@ -65,7 +65,7 @@
           style="width: 100%; display: flex; flex-direction: column;"
         >
           <div class="BTimg"></div>
-          <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div>
+          <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
           <div
             class="backgroundBT marginBT"
             style="
@@ -124,31 +124,74 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.BTimg {
-  background-image: url("../assets/Webp/Asd/bg.webp");
-  background-color: transparent;
-  background-size: cover;
-  width: 100%;
-  height: 170px;
-  background-position: center;
-}
-@media (min-width: 750px) {
+
+@media (max-width: 768px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/bg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg.webp");
     background-color: transparent;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
-    height: 300px;
+    height: 768px;
     background-position: center;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 540px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/bg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg.webp");
     background-color: transparent;
     background-size: cover;
     width: 100%;
-    height: 125px;
+    height: 500px;
+    background-position: center;
+  }
+}
+@media (max-width: 415px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-color: transparent;
+    background-size: contain;
+    width: 100%;
+    height: 415px;
+    background-position: center;
+  }
+}
+@media (max-width: 376px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-color: transparent;
+    background-size: contain;
+    width: 100%;
+    height: 375px;
+    background-position: center;
+  }
+}
+@media (max-width: 360px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-color: transparent;
+    background-size: contain;
+    width: 100%;
+    height: 360px;
+    background-position: center;
+  }
+}
+@media (max-width: 320px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-color: transparent;
+    background-size: contain;
+    width: 100%;
+    height: 320px;
+    background-position: center;
+  }
+}
+@media (max-width: 280px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-color: transparent;
+    background-size: contain;
+    width: 100%;
+    height: 280px;
     background-position: center;
   }
 }
@@ -201,47 +244,69 @@ img {
     margin-top: 5%;
   }
 }
-.marginBT {
-  margin-top: 25%;
-}
-@media (min-width: 500px) {
+@media (max-width: 768px) {
   .marginBT {
-    margin-top: 16%;
+    margin-top: 70%;
+  }
+}
+@media (max-width: 540px) {
+  .marginBT {
+    margin-top: 70%;
+  }
+}
+@media (max-width: 415px) {
+  .marginBT {
+    margin-top: 70%;
+  }
+}
+@media (max-width: 376px) {
+  .marginBT {
+    margin-top: 70%;
+  }
+}
+@media (max-width: 360px) {
+  .marginBT {
+    margin-top: 70%;
+  }
+}
+@media (max-width: 320px) {
+  .marginBT {
+    margin-top: 70%;
+  }
+}
+@media (max-width: 280px) {
+  .marginBT {
+    margin-top: 70%;
   }
 }
 @media (min-width: 700px) {
   .marginBT {
-    margin-top: 22%;
+    margin-top: 70%;
   }
 }
 @media (min-width: 1000px) {
   .marginBT {
-    margin-top: 22%;
-  }
-}
-@media (min-width: 1500px) {
-  .marginBT {
-    margin-top: 22%;
-  }
-}
-@media (min-width: 1900px) {
-  .marginBT {
-    margin-top: 25%;
+    margin-top: 42%;
   }
 }
 @media (min-width: 2000px) {
   .marginBT {
-    margin-top: 20%;
+    margin-top: 43%;
   }
 }
 @media (min-width: 2350px) {
   .marginBT {
-    margin-top: 18%;
+    margin-top: 38%;
   }
 }
 @media (min-width: 2650px) {
   .marginBT {
-    margin-top: 15%;
+    margin-top: 30%;
+  }
+}
+@media (min-width: 3000px) {
+  .marginBT {
+    margin-top: 20%;
   }
 }
 
