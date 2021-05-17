@@ -16,7 +16,7 @@
             background: red;
             position: absolute;
             width: 30%;
-            max-width: 350px;
+            max-width: 250px;
           "
           >
             <v-card
@@ -286,17 +286,17 @@ img {
 }
 @media (min-width: 1000px) {
   .marginBT {
-    margin-top: 42%;
+    margin-top: 30%;
   }
 }
 @media (min-width: 2000px) {
   .marginBT {
-    margin-top: 43%;
+    margin-top: 27%;
   }
 }
 @media (min-width: 2350px) {
   .marginBT {
-    margin-top: 38%;
+    margin-top: 30%;
   }
 }
 @media (min-width: 2650px) {
@@ -306,7 +306,7 @@ img {
 }
 @media (min-width: 3000px) {
   .marginBT {
-    margin-top: 20%;
+    margin-top: 13%;
   }
 }
 
