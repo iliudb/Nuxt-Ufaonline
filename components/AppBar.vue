@@ -87,7 +87,7 @@
                 class="justify-center"
                 style="margin: 0px; margin-top: 15px"
               >
-                <a href="https://lin.ee/sQCIWhr" target="_BLANK">
+                <a href="https://lin.ee/6W5TMYA" target="_BLANK">
                   <div>
                     <img
                       width="90%"
@@ -152,7 +152,7 @@
           style="background: transparent"
           height="100%"
           width="20%"
-          href="https://lin.ee/sQCIWhr"
+          href="https://lin.ee/6W5TMYA"
           target="_BLANK"
           class="pa-0 align-start"
         >

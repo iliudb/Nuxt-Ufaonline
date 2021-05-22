@@ -6,7 +6,7 @@
       <!-- Desktop -->
       <div class="hidden-sm-and-down">
         <div style="position: fixed; right: 2.5%; top: 60%; z-index: 1">
-          <a href="https://lin.ee/sQCIWhr" target="_BLANK">
+          <a href="https://lin.ee/6W5TMYA" target="_BLANK">
             <img style="10%" src="../assets/Webp/Ufagame/linebunnyfix.webp" />
           </a>
         </div>
