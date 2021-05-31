@@ -8,7 +8,7 @@
           class="align-center"
           style="width: 100%; display: flex; flex-direction: column;"
         >
-          <img style="width: 100%" src="../assets/Webp/Asd/pcbg.webp" />
+          <img style="width: 100%" src="../assets/Webp/Asd/pcbg2.webp" />
           <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
           <div
             class="backgroundBT marginBT"
@@ -127,7 +127,7 @@ export default {
 
 @media (max-width: 768px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -137,7 +137,7 @@ export default {
 }
 @media (max-width: 540px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: cover;
     width: 100%;
@@ -147,7 +147,7 @@ export default {
 }
 @media (max-width: 415px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -157,7 +157,7 @@ export default {
 }
 @media (max-width: 376px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -167,7 +167,7 @@ export default {
 }
 @media (max-width: 360px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -177,7 +177,7 @@ export default {
 }
 @media (max-width: 320px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -187,7 +187,7 @@ export default {
 }
 @media (max-width: 280px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg.webp");
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -203,17 +203,6 @@ img {
   margin-top: 5%;
   width: 60%;
 }
-// @media (max-width: 400px) {
-//   .pro100 {
-//     margin-top: 5%;
-//   }
-// }
-// @media (max-width: 650px) {
-//   .pro100 {
-//     margin-top: -3%;
-//   }
-// }
-
 @media (min-width: 500px) {
   .pro100 {
     width: 50%;
@@ -244,69 +233,39 @@ img {
     margin-top: 5%;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 200px) {
   .marginBT {
-    margin-top: 70%;
+    margin-top: 50%;
   }
 }
-@media (max-width: 540px) {
+@media (min-width: 300px) {
   .marginBT {
-    margin-top: 70%;
+    margin-top: 50%;
   }
 }
-@media (max-width: 415px) {
+@media (min-width: 500px) {
   .marginBT {
-    margin-top: 70%;
-  }
-}
-@media (max-width: 376px) {
-  .marginBT {
-    margin-top: 70%;
-  }
-}
-@media (max-width: 360px) {
-  .marginBT {
-    margin-top: 70%;
-  }
-}
-@media (max-width: 320px) {
-  .marginBT {
-    margin-top: 70%;
-  }
-}
-@media (max-width: 280px) {
-  .marginBT {
-    margin-top: 70%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 700px) {
   .marginBT {
-    margin-top: 70%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 1000px) {
   .marginBT {
-    margin-top: 30%;
+    margin-top: 26%;
+  }
+}
+@media (min-width: 1500px) {
+  .marginBT {
+    margin-top: 28%;
   }
 }
 @media (min-width: 2000px) {
   .marginBT {
-    margin-top: 27%;
-  }
-}
-@media (min-width: 2350px) {
-  .marginBT {
-    margin-top: 30%;
-  }
-}
-@media (min-width: 2650px) {
-  .marginBT {
-    margin-top: 30%;
-  }
-}
-@media (min-width: 3000px) {
-  .marginBT {
-    margin-top: 13%;
+    margin-top: 20%;
   }
 }
 

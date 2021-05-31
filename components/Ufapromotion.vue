@@ -83,7 +83,7 @@
 
       <v-carousel
         cycle
-        style="max-height: 350px"
+        style="max-height: 350px; max-width:350px; margin:0 auto"
         hide-delimiter-background
         show-arrows-on-hover
       >
