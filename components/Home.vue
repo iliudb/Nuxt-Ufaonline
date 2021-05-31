@@ -145,6 +145,16 @@ export default {
     background-position: center;
   }
 }
+@media (max-width: 429px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
+    background-color: transparent;
+    background-size: contain;
+    width: 100%;
+    height: 428px;
+    background-position: center;
+  }
+}
 @media (max-width: 415px) {
   .BTimg {
     background-image: url("../assets/Webp/Asd/mbbg2.webp");
@@ -245,22 +255,22 @@ img {
 }
 @media (min-width: 200px) {
   .marginBT {
-    margin-top: 52%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 300px) {
   .marginBT {
-    margin-top: 52%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 500px) {
   .marginBT {
-    margin-top: 52%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 700px) {
   .marginBT {
-    margin-top: 52%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 1000px) {
