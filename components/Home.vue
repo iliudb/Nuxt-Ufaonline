@@ -131,7 +131,7 @@ export default {
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    height: 768px;
+    max-height: 768px;
     background-position: center;
   }
 }
@@ -139,9 +139,9 @@ export default {
   .BTimg {
     background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
-    height: 500px;
+    max-height: 540px;
     background-position: center;
   }
 }
@@ -151,7 +151,7 @@ export default {
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    height: 415px;
+    max-height: 415px;
     background-position: center;
   }
 }
@@ -161,7 +161,7 @@ export default {
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    height: 375px;
+    max-height: 375px;
     background-position: center;
   }
 }
@@ -171,7 +171,7 @@ export default {
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    height: 360px;
+    max-height: 360px;
     background-position: center;
   }
 }
@@ -181,7 +181,7 @@ export default {
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    height: 320px;
+    max-height: 320px;
     background-position: center;
   }
 }
@@ -191,7 +191,7 @@ export default {
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    height: 280px;
+    max-height: 280px;
     background-position: center;
   }
 }
@@ -235,22 +235,22 @@ img {
 }
 @media (min-width: 200px) {
   .marginBT {
-    margin-top: 50%;
+    margin-top: 52%;
   }
 }
 @media (min-width: 300px) {
   .marginBT {
-    margin-top: 50%;
+    margin-top: 52%;
   }
 }
 @media (min-width: 500px) {
   .marginBT {
-    margin-top: 50%;
+    margin-top: 52%;
   }
 }
 @media (min-width: 700px) {
   .marginBT {
-    margin-top: 50%;
+    margin-top: 52%;
   }
 }
 @media (min-width: 1000px) {

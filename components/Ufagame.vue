@@ -60,7 +60,7 @@ export default {
 <style lang="scss" scoped>
 #redlinethic {
   width: 100%;
-  height: 1%;
+  height: 3px;
   background: red;
   margin: 0px 0 10px 0;
 }
