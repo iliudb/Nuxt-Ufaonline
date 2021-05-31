@@ -125,23 +125,23 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .BTimg {
     background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    max-height: 768px;
+    height: 768px;
     background-position: center;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 541px) {
   .BTimg {
     background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    max-height: 540px;
+    height: 540px;
     background-position: center;
   }
 }
@@ -151,7 +151,17 @@ export default {
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    max-height: 415px;
+    height: 414px;
+    background-position: center;
+  }
+}
+@media (max-width: 412px) {
+  .BTimg {
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
+    background-color: transparent;
+    background-size: contain;
+    width: 100%;
+    height: 411px;
     background-position: center;
   }
 }
@@ -161,37 +171,37 @@ export default {
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    max-height: 375px;
+    height: 375px;
     background-position: center;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 361px) {
   .BTimg {
     background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    max-height: 360px;
+    height: 360px;
     background-position: center;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 321px) {
   .BTimg {
     background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    max-height: 320px;
+    height: 320px;
     background-position: center;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 281px) {
   .BTimg {
     background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
-    max-height: 280px;
+    height: 280px;
     background-position: center;
   }
 }
