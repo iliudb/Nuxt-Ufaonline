@@ -1,5 +1,5 @@
 <template>
-  <div style="width:100%; max-width:2000px;">
+  <div style="width: 100%; max-width: 2000px">
     <!-- Desktop -->
     <div class="hidden-sm-and-down">
       <div style="color: white; text-align: center; font-size: 40px">
@@ -8,11 +8,28 @@
       <div class="d-flex justify-center" style="padding: 0px 0px 2.5% 0px">
         <img src="../assets/Webp/Ufapromotion/promotion.webp" />
       </div>
-      <div id="proloopimg" class="d-flex justify-center flex-wrap">
+      <div class="d-flex justify-center" style="width: 100%;">
+        <v-slide-group v-model="model" center-active mandatory>
+          <v-slide-item v-for="n in proimg" :key="n.id" v-slot="{ toggle }">
+            <v-card
+              style="
+                width: 400px;
+                height: 400px;
+                background: transparent;
+                padding: 1%;
+              "
+              @click="toggle"
+            >
+              <img style="width: 100%; height: 100%" :src="n.src" />
+            </v-card>
+          </v-slide-item>
+        </v-slide-group>
+      </div>
+      <!-- <div id="proloopimg" class="d-flex justify-center flex-wrap">
         <div class="d-flex justify-center" v-for="i in proimg" :key="i.id">
           <img :src="i.src" />
         </div>
-      </div>
+      </div> -->
       <div class="d-flex">
         <div class="d-flex justify-center flex-wrap" style="width: 60%">
           <div style="width: 100%" class="d-flex justify-center">
@@ -66,13 +83,13 @@
 
       <v-carousel
         cycle
-        style="max-height: 400px"
+        style="max-height: 350px"
         hide-delimiter-background
         show-arrows-on-hover
       >
         <v-carousel-item v-for="i in proimg" :key="i.id">
-          <div class="d-flex justify-center">
-            <img style="width: 100%; max-width: 400px" :src="i.src" />
+          <div style="width: 100%; max-height: 350px">
+            <img style="width: 100%; max-height: 350px" :src="i.src" />
           </div>
         </v-carousel-item>
       </v-carousel>
@@ -121,20 +138,21 @@
 <script>
 export default {
   data: () => ({
+    model: "",
     colors: [
       "indigo",
       "warning",
       "pink darken-2",
       "red lighten-1",
-      "deep-purple accent-4"
+      "deep-purple accent-4",
     ],
     slides: ["First", "Second", "Third", "Fourth", "Fifth"],
     proimg: [
-      { id: 1, src: require("../assets/Webp/Ufapromotion/pro01.webp") },
-      { id: 2, src: require("../assets/Webp/Ufapromotion/pro02.webp") },
-      { id: 3, src: require("../assets/Webp/Ufapromotion/pro03.webp") }
-    ]
-  })
+      { id: 1, src: require("../assets/Webp/Ufapromotion/pro04.webp") },
+      { id: 2, src: require("../assets/Webp/Ufapromotion/pro05.webp") },
+      { id: 3, src: require("../assets/Webp/Ufapromotion/pro08.webp") },
+    ],
+  }),
 };
 </script>
 
