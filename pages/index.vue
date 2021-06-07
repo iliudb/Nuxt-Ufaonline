@@ -9,7 +9,7 @@
     <div class="d-flex justify-center" style="width: 100%">
       <Ufagame />
     </div>
-    <div class="d-flex justify-center" style="width: 100%">
+    <div id="promotion" class="d-flex justify-center" style="width: 100%">
       <Ufapromotion />
     </div>
     <div class="d-flex justify-center" style="width: 100%">

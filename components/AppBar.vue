@@ -199,6 +199,7 @@ export default {
           id: 1,
           value: "โปรโมชั่น",
           src: require("../assets/Webp/Appbar/promotion.webp"),
+          path: "#promotion",
         },
         {
           id: 2,
