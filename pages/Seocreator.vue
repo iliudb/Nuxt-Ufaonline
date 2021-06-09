@@ -34,11 +34,11 @@
             class="d-flex justify-center align-center"
             style="background: transparent; width: 15%"
           >
-            <div style="height: 100%">
-              <a @click="seoimgfu('http://image.oneslot.bet/' + i.img)">
+            <div class="d-flex justify-center" style="height: 100%; max-width:100px; overflow:hidden">
+              <a @click="seoimgfu('http://image.warpufa.bet/' + i.img)">
                 <img
                   style="height: 100%"
-                  :src="'http://image.oneslot.bet/' + i.img"
+                  :src="'https://image.warpufa.bet/' + i.img"
               /></a>
             </div>
           </div>
@@ -189,7 +189,7 @@
           <div v-if="imageURLupdate == ''">
             <img
               style="max-width: 150px"
-              :src="'http://image.oneslot.bet/' + seoeditpost.seoimg"
+              :src="'https://image.warpufa.bet/' + seoeditpost.seoimg"
             />
           </div>
           <div v-if="imageURLupdate != ''">
