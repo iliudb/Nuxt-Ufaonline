@@ -8,7 +8,7 @@
           class="align-center"
           style="width: 100%; display: flex; flex-direction: column;"
         >
-          <img style="width: 100%" src="../assets/Webp/Asd/pcbg3.webp" />
+          <img style="width: 100%" src="../assets/Webp/Asd/pcbg2.webp" />
           <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
           <div
             class="backgroundBT marginBT"
@@ -127,7 +127,7 @@ export default {
 
 @media (max-width: 769px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg3.webp");
+    background-image: url("../assets/Webp/Asd/mbbg2.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -215,22 +215,22 @@ img {
 }
 @media (min-width: 200px) {
   .marginBT {
-    margin-top: 80%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 300px) {
   .marginBT {
-    margin-top: 80%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 500px) {
   .marginBT {
-    margin-top: 80%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 700px) {
   .marginBT {
-    margin-top: 80%;
+    margin-top: 50%;
   }
 }
 @media (min-width: 1000px) {
