@@ -8,7 +8,7 @@
           class="align-center"
           style="width: 100%; display: flex; flex-direction: column;"
         >
-          <img style="width: 100%" src="../assets/Webp/Asd/pcbg2.webp" />
+          <img style="width: 100%" src="../assets/Webp/Asd/pcbg3.webp" />
           <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
           <div
             class="backgroundBT marginBT"
@@ -127,7 +127,7 @@ export default {
 
 @media (max-width: 769px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
+    background-image: url("../assets/Webp/Asd/mbbg3.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -137,82 +137,42 @@ export default {
 }
 @media (max-width: 541px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
-    background-color: transparent;
-    background-size: contain;
-    width: 100%;
     height: 540px;
-    background-position: center;
   }
 }
 @media (max-width: 429px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
-    background-color: transparent;
-    background-size: contain;
-    width: 100%;
     height: 428px;
-    background-position: center;
   }
 }
 @media (max-width: 415px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
-    background-color: transparent;
-    background-size: contain;
-    width: 100%;
     height: 414px;
-    background-position: center;
   }
 }
 @media (max-width: 412px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
-    background-color: transparent;
-    background-size: contain;
-    width: 100%;
     height: 411px;
-    background-position: center;
   }
 }
 @media (max-width: 376px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
-    background-color: transparent;
-    background-size: contain;
-    width: 100%;
     height: 375px;
-    background-position: center;
   }
 }
 @media (max-width: 361px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
-    background-color: transparent;
-    background-size: contain;
-    width: 100%;
     height: 360px;
-    background-position: center;
   }
 }
 @media (max-width: 321px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
-    background-color: transparent;
-    background-size: contain;
-    width: 100%;
     height: 320px;
-    background-position: center;
   }
 }
 @media (max-width: 281px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
-    background-color: transparent;
-    background-size: contain;
-    width: 100%;
     height: 280px;
-    background-position: center;
   }
 }
 img {
@@ -255,22 +215,22 @@ img {
 }
 @media (min-width: 200px) {
   .marginBT {
-    margin-top: 50%;
+    margin-top: 80%;
   }
 }
 @media (min-width: 300px) {
   .marginBT {
-    margin-top: 50%;
+    margin-top: 80%;
   }
 }
 @media (min-width: 500px) {
   .marginBT {
-    margin-top: 50%;
+    margin-top: 80%;
   }
 }
 @media (min-width: 700px) {
   .marginBT {
-    margin-top: 50%;
+    margin-top: 80%;
   }
 }
 @media (min-width: 1000px) {
