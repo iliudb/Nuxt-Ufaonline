@@ -8,7 +8,7 @@
           class="align-center"
           style="width: 100%; display: flex; flex-direction: column;"
         >
-          <img style="width: 100%" src="../assets/Webp/Asd/pcbg2.webp" />
+          <img style="width: 100%" src="../assets/Webp/Asd/pcbg4.webp" />
           <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
           <div
             class="backgroundBT marginBT"
@@ -127,7 +127,7 @@ export default {
 
 @media (max-width: 769px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg2.webp");
+    background-image: url("../assets/Webp/Asd/mbbg4.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
