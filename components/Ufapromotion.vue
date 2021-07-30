@@ -148,9 +148,10 @@ export default {
     ],
     slides: ["First", "Second", "Third", "Fourth", "Fifth"],
     proimg: [
-      { id: 1, src: require("../assets/Webp/Ufapromotion/pro05.webp") },
+      { id: 1, src: require("../assets/Webp/Ufapromotion/pro10.webp") },
       { id: 2, src: require("../assets/Webp/Ufapromotion/pro08.webp") },
       { id: 3, src: require("../assets/Webp/Ufapromotion/pro04.webp") },
+      { id: 4, src: require("../assets/Webp/Ufapromotion/pro09.webp") },
     ],
   }),
 };

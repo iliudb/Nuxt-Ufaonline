@@ -35,7 +35,7 @@ export default {
                 content: "เว็บบอลออนไลน์ ยูฟ่า เว็บตรงจาก UFABET  เว็บคาสิโนออนไลน์อันดับ 1 เล่นง่ายๆ ได้เงินชัวร์ๆ ฝาก ถอนเงินอัตโนมัติ 24 ชม."
             }
         ],
-        link: [{ rel: "icon", type: "image/png", href: "/icon.png" }]
+        link: [{ rel: "icon", type: "image/png", href: "/icon0.png" }]
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
