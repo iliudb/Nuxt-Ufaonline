@@ -1,30 +1,33 @@
 <template>
-  <div style="width:100%; max-width:2000px">
+  <div style="width: 100%; max-width: 2000px">
     <div class="hidden-sm-and-down" style="height: 100px"></div>
     <!-- Desktop -->
     <div class="hidden-sm-and-down">
-      <div class="d-flex justify-center" style="width: 100%;">
+      <div class="d-flex justify-center" style="width: 100%">
         <div
           class="align-center"
-          style="width: 100%; display: flex; flex-direction: column;"
+          style="width: 100%; display: flex; flex-direction: column"
         >
-          <img style="width: 100%" src="../assets/Webp/Asd/pcbg5.webp" />
+          <img style="width: 100%" src="../assets/Webp/Asd/pcbg0.webp" />
           <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
+          <div style="position: absolute; ">
+            <img style="width: 100%; height:200px" src="../assets/Webp/Newufabet/ufalogo.webp">
+          </div>
           <div
             class="backgroundBT marginBT"
             style="
-            background: red;
-            position: absolute;
-            width: 30%;
-            max-width: 250px;
-          "
+              background: red;
+              position: absolute;
+              width: 30%;
+              max-width: 250px;
+            "
           >
             <v-card
-              class=" d-flex justify-center align-center"
+              class="d-flex justify-center align-center"
               outlined
               tile
               color="transparent"
-              style="z-index: 1;padding:2px;"
+              style="z-index: 1; padding: 2px"
             >
               <div>
                 <div style="display: flex; flex-direction: column">
@@ -59,21 +62,22 @@
 
     <!-- Mobile -->
     <div class="hidden-md-and-up">
-      <div class="d-flex justify-center" style="width: 100%;">
+      <div class="d-flex justify-center" style="width: 100%">
         <div
           class="align-center"
-          style="width: 100%; display: flex; flex-direction: column;"
+          style="width: 100%; display: flex; flex-direction: column"
         >
+        
           <div class="BTimg"></div>
-          <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
+          <div class="pro100" style="position: absolute;"><img style="min-height:100px" src="../assets/Webp/Newufabet/ufalogo.webp" /></div>
           <div
             class="backgroundBT marginBT"
             style="
-            background: red;
-            position: absolute;
-            width: 30%;
-            max-width: 350px;
-          "
+              background: red;
+              position: absolute;
+              width: 30%;
+              max-width: 350px;
+            "
           >
             <v-card
               class="d-flex justify-center align-center"
@@ -120,14 +124,13 @@ export default {
   data: () => {
     return {};
   },
-  name: "Home"
+  name: "Home",
 };
 </script>
 <style lang="scss" scoped>
-
 @media (max-width: 769px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg5.webp");
+    background-image: url("../assets/Webp/Asd/mbbg0.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
@@ -179,37 +182,32 @@ img {
   max-width: 100%;
   height: auto;
 }
-.pro100{
+.pro100 {
   margin-top: 5%;
-  width: 60%;
+  width: 100%;
 }
 @media (min-width: 500px) {
   .pro100 {
-    width: 50%;
     margin-top: 0%;
   }
 }
 @media (min-width: 800px) {
   .pro100 {
-    width: 50%;
     margin-top: 5%;
   }
 }
 @media (min-width: 1000px) {
   .pro100 {
-    width: 55%;
     margin-top: 4%;
   }
 }
 @media (min-width: 1900px) {
   .pro100 {
-    width: 60%;
     margin-top: 5%;
   }
 }
 @media (min-width: 2000px) {
   .pro100 {
-    width: 30%;
     margin-top: 5%;
   }
 }

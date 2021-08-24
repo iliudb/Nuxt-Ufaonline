@@ -8,20 +8,22 @@
       <div class="d-flex justify-center" style="padding: 0px 0px 2.5% 0px">
         <img src="../assets/Webp/Ufapromotion/promotion.webp" />
       </div>
-      <div class="d-flex justify-center" style="width: 100%;">
+      <div class="d-flex justify-center" style="width: 100%">
         <v-slide-group v-model="model" center-active mandatory>
           <v-slide-item v-for="n in proimg" :key="n.id" v-slot="{ toggle }">
-            <v-card
-              style="
-                width: 400px;
-                height: 400px;
-                background: transparent;
-                padding: 1%;
-              "
-              @click="toggle"
-            >
-              <img style="width: 100%; height: 100%" :src="n.src" />
-            </v-card>
+            <a target="_blank" href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login">
+              <v-card
+                style="
+                  width: 400px;
+                  height: 400px;
+                  background: transparent;
+                  padding: 1%;
+                "
+                @click="toggle"
+              >
+                <img style="width: 100%; height: 100%" :src="n.src" />
+              </v-card>
+            </a>
           </v-slide-item>
         </v-slide-group>
       </div>
@@ -83,14 +85,16 @@
 
       <v-carousel
         cycle
-        style="max-height: 350px; max-width:350px; margin:0 auto"
+        style="max-height: 350px; max-width: 350px; margin: 0 auto"
         hide-delimiter-background
         show-arrows-on-hover
       >
         <v-carousel-item v-for="i in proimg" :key="i.id">
-          <div style="width: 100%; max-height: 350px">
-            <img style="width: 100%; max-height: 350px" :src="i.src" />
-          </div>
+          <a target="_blank" href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login">
+            <div style="width: 100%; max-height: 350px">
+              <img style="width: 100%; max-height: 350px" :src="i.src" />
+            </div>
+          </a>
         </v-carousel-item>
       </v-carousel>
 
@@ -148,10 +152,8 @@ export default {
     ],
     slides: ["First", "Second", "Third", "Fourth", "Fifth"],
     proimg: [
-      { id: 1, src: require("../assets/Webp/Ufapromotion/pro10.webp") },
-      { id: 2, src: require("../assets/Webp/Ufapromotion/pro08.webp") },
-      { id: 3, src: require("../assets/Webp/Ufapromotion/pro04.webp") },
-      { id: 4, src: require("../assets/Webp/Ufapromotion/pro09.webp") },
+      { id: 1, src: require("../assets/Webp/Ufapromotion/pro11.webp") },
+      { id: 2, src: require("../assets/Webp/Ufapromotion/pro12.webp") },
     ],
   }),
 };
