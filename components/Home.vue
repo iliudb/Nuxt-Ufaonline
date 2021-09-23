@@ -8,11 +8,8 @@
           class="align-center"
           style="width: 100%; display: flex; flex-direction: column"
         >
-          <img style="width: 100%" src="../assets/Webp/Asd/pcbg0.webp" />
+          <img style="width: 100%" src="../assets/Webp/Asd/pcbg6.webp" />
           <!-- <div class="pro100" style="position: absolute;"><img style="width: 100%" src="../assets/Webp/Asd/test.png" /></div> -->
-          <div style="position: absolute; ">
-            <img style="width: 100%; height:200px" src="../assets/Webp/Newufabet/ufalogo.webp">
-          </div>
           <div
             class="backgroundBT marginBT"
             style="
@@ -69,7 +66,6 @@
         >
         
           <div class="BTimg"></div>
-          <div class="pro100" style="position: absolute;"><img style="min-height:100px" src="../assets/Webp/Newufabet/ufalogo.webp" /></div>
           <div
             class="backgroundBT marginBT"
             style="
@@ -130,7 +126,7 @@ export default {
 <style lang="scss" scoped>
 @media (max-width: 769px) {
   .BTimg {
-    background-image: url("../assets/Webp/Asd/mbbg0.webp");
+    background-image: url("../assets/Webp/Asd/mbbg6.webp");
     background-color: transparent;
     background-size: contain;
     width: 100%;
