@@ -39,7 +39,7 @@
           <div style="width: 30%" class="d-flex justify-end">
             <a
               style="color: white"
-              href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
+              href="https://warpufa.co/"
             >
               <div
                 class="d-flex justify-center align-center"
@@ -48,7 +48,7 @@
             ></a>
             <a
               style="color: white"
-              href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+              href="https://warpufa.co/"
             >
               <div
                 class="d-flex justify-center align-center"
@@ -137,7 +137,7 @@
           height="100%"
           width="20%"
           class="align-end pa-0 align-center"
-          href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login"
+          href="https://warpufa.co/"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-01.webp"
         /></v-btn>
         <v-btn
@@ -145,7 +145,7 @@
           height="100%"
           width="20%"
           class="align-end pa-0 align-center"
-          href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+          href="https://warpufa.co/"
           ><img id="navimg101" src="../assets/Webp/Appbar/1-02.webp"
         /></v-btn>
         <v-btn

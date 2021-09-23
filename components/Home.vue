@@ -49,7 +49,7 @@
                 text
                 block
                 height="100%"
-                href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+                href="https://warpufa.co/"
               ></v-btn>
             </v-card>
           </div>
@@ -105,7 +105,7 @@
                 text
                 block
                 height="100%"
-                href="https://ufaonline.ibetauto.com/ufaonline/ufabet/register"
+                href="https://warpufa.co/"
               ></v-btn>
             </v-card>
           </div>

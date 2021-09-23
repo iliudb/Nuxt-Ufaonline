@@ -11,7 +11,7 @@
       <div class="d-flex justify-center" style="width: 100%">
         <v-slide-group v-model="model" center-active mandatory>
           <v-slide-item v-for="n in proimg" :key="n.id" v-slot="{ toggle }">
-            <a target="_blank" href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login">
+            <a target="_blank" href="https://warpufa.co/">
               <v-card
                 style="
                   width: 400px;
@@ -90,7 +90,7 @@
         show-arrows-on-hover
       >
         <v-carousel-item v-for="i in proimg" :key="i.id">
-          <a target="_blank" href="https://ufaonline.ibetauto.com/ufaonline/ufabet/login">
+          <a target="_blank" href="https://warpufa.co/">
             <div style="width: 100%; max-height: 350px">
               <img style="width: 100%; max-height: 350px" :src="i.src" />
             </div>
